@@ -296,7 +296,11 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil, *userName = nil;
-	if ([userDefaults objectForKey:MGMGRBugsEmail]!=nil && ![[userDefaults objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
+	if ([userDefaults objectForKey:MGMGRContactEmail]!=nil && ![[userDefaults objectForKey:MGMGRContactEmail] isEqualToString:@""]) {
+		email = [userDefaults objectForKey:MGMGRContactEmail];
+	} else if ([infoDictionary objectForKey:MGMGRContactEmail]!=nil && ![[infoDictionary objectForKey:MGMGRContactEmail] isEqualToString:@""]) {
+		email = [infoDictionary objectForKey:MGMGRContactEmail];
+	} else if ([userDefaults objectForKey:MGMGRBugsEmail]!=nil && ![[userDefaults objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
 		email = [userDefaults objectForKey:MGMGRBugsEmail];
 	} else if ([infoDictionary objectForKey:MGMGRBugsEmail]!=nil && ![[infoDictionary objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
 		email = [infoDictionary objectForKey:MGMGRBugsEmail];
@@ -304,10 +308,6 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		email = [userDefaults objectForKey:MGMGRCrashEmail];
 	} else if ([infoDictionary objectForKey:MGMGRCrashEmail]!=nil && ![[infoDictionary objectForKey:MGMGRCrashEmail] isEqualToString:@""]) {
 		email = [infoDictionary objectForKey:MGMGRCrashEmail];
-	} else if ([userDefaults objectForKey:MGMGRContactEmail]!=nil && ![[userDefaults objectForKey:MGMGRContactEmail] isEqualToString:@""]) {
-		email = [userDefaults objectForKey:MGMGRContactEmail];
-	} else if ([infoDictionary objectForKey:MGMGRContactEmail]!=nil && ![[infoDictionary objectForKey:MGMGRContactEmail] isEqualToString:@""]) {
-		email = [infoDictionary objectForKey:MGMGRContactEmail];
 	} else {
 		email = MGMDefaultBugsEmail;
 	}

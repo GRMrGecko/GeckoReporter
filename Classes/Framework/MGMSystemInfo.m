@@ -206,7 +206,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterCheetah {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>0);
+		return (minorVersion>=0);
 	}
 	return NO;
 }
@@ -214,7 +214,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterPuma {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>1);
+		return (minorVersion>=1);
 	}
 	return NO;
 }
@@ -222,7 +222,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterJaguar {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>2);
+		return (minorVersion>=2);
 	}
 	return NO;
 }
@@ -230,7 +230,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterPanther {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>3);
+		return (minorVersion>=3);
 	}
 	return NO;
 }
@@ -238,7 +238,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterTiger {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>4);
+		return (minorVersion>=4);
 	}
 	return NO;
 }
@@ -246,7 +246,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterLeopard {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>5);
+		return (minorVersion>=5);
 	}
 	return NO;
 }
@@ -254,7 +254,7 @@ NSString * const MGMModel = @"hw.model";
 - (BOOL)isAfterSnowLeopard {
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
-		return (minorVersion=>6);
+		return (minorVersion>=6);
 	}
 	return NO;
 }
