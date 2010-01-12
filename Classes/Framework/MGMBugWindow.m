@@ -13,7 +13,7 @@
 #import "MGMLog.h"
 
 @implementation MGMBugWindow
-+ (id)new {
++ (id)sharedBugWindow {
 	return [[self alloc] init];
 }
 - (id)init {
@@ -56,7 +56,7 @@
 - (IBAction)send:(id)sender {
 	[[NSUserDefaults standardUserDefaults] setObject:[userEmailField stringValue] forKey:MGMGRUserEmail];
 	if (mailSender==nil) {
-		mailSender = [[MGMSender new] retain];
+		mailSender = [MGMSender new];
 		[mailSender sendBug:[[bugView textStorage] string] reproduce:[[reproduceView textStorage] string] delegate:self];
 	}
 	[sendButton setTitle:MGMLocalized(@"Sending...", nil)];

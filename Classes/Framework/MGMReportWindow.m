@@ -16,7 +16,7 @@
 NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 
 @implementation MGMReportWindow
-+ (id)newWindowWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate {
++ (id)sharedWindowWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate {
 	return [[self alloc] initWithReport:theReportFile reportDate:theReportDate];
 }
 - (id)initWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate {
@@ -29,7 +29,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 			reportDate = [theReportDate retain];
 			NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 			NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
-			MGMSystemInfo *sysInfo = [MGMSystemInfo new];
+			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 			NSString *applicationName = [sysInfo applicationName];
 			
 			appMainMenu = [[[NSApplication sharedApplication] mainMenu] retain];
@@ -91,7 +91,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 - (IBAction)sendReport:(id)sender {
 	[[NSUserDefaults standardUserDefaults] setObject:[userEmailField stringValue] forKey:MGMGRUserEmail];
 	if (mailSender==nil) {
-		mailSender = [[MGMSender new] retain];
+		mailSender = [MGMSender new];
 		[mailSender sendReport:reportFile reportDate:reportDate userReport:[[userReportView textStorage] string] delegate:self];
 	}
 	[sendButton setTitle:MGMLocalized(@"Sending...", nil)];
@@ -101,7 +101,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 	[[NSUserDefaults standardUserDefaults] setObject:[userEmailField stringValue] forKey:MGMGRUserEmail];
 	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:MGMGRSendAll];
 	if (mailSender==nil) {
-		mailSender = [[MGMSender new] retain];
+		mailSender = [MGMSender new];
 		[mailSender sendReport:reportFile reportDate:reportDate userReport:[[userReportView textStorage] string] delegate:self];
 	}
 	[sendAllButton setTitle:MGMLocalized(@"Sending...", nil)];

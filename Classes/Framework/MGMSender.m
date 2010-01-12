@@ -111,8 +111,8 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	return data;
 }
 - (NSDictionary *)defaultObjects {
-	MGMSystemInfo *sysInfo = [MGMSystemInfo new];
-	NSMutableDictionary *objects = [NSMutableDictionary new];
+	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+	NSMutableDictionary *objects = [NSMutableDictionary dictionary];
 	[objects setObject:[sysInfo frameworkVersion] forKey:@"GRVersion"];
 	[objects setObject:[sysInfo applicationName] forKey:@"Application"];
 	[objects setObject:[sysInfo applicationIdentifier] forKey:@"Application Identifier"];
@@ -153,7 +153,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [MGMSystemInfo new];
+	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil, *logFiles = nil;
 	BOOL reportAttached = NO;
@@ -233,7 +233,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [MGMSystemInfo new];
+	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil;
 	if ([userDefaults objectForKey:MGMGRBugsEmail]!=nil && ![[userDefaults objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
@@ -293,7 +293,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [MGMSystemInfo new];
+	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil, *userName = nil;
 	if ([userDefaults objectForKey:MGMGRBugsEmail]!=nil && ![[userDefaults objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
@@ -360,8 +360,6 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		MGMLog(@"%@", [error localizedDescription]);
 		if (delegate!=nil && [delegate respondsToSelector:@selector(sendError:)])
 			[delegate sendError:error];
-		[self release];
-		self = nil;
 	} else {
 		[receivedData setLength:0];
 	}
@@ -376,7 +374,6 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	if (delegate!=nil && [delegate respondsToSelector:@selector(sendError:)])
 		[delegate sendError:error];
 	[self release];
-	self = nil;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -385,7 +382,5 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		if (delegate!=nil && [delegate respondsToSelector:@selector(sendFinished:)])
 			[delegate sendFinished:receivedString];
 	}
-	[self release];
-	self = nil;
 }
 @end

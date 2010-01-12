@@ -12,8 +12,6 @@
 #import "MGMSystemInfo.h"
 #import "MGMLog.h"
 
-static MGMReporter *MGMReporterSingleton = nil;
-
 NSString * const MGMReportsPath = @"~/Library/Logs/CrashReporter";
 NSString * const MGMGRDoneNotification = @"MGMGRDoneNotification";
 NSString * const MGMGRUserEmail = @"MGMGRUserEmail";
@@ -24,12 +22,7 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 
 @implementation MGMReporter
 + (id)sharedReporter {
-	@synchronized(self) {
-        if (MGMReporterSingleton == nil) {
-			MGMReporterSingleton = [[self alloc] init]; 
-		}
-    }
-    return MGMReporterSingleton;
+    return [[self alloc] init];
 }
 - (id)init {
 	if (self = [super init]) {
@@ -38,7 +31,7 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 		NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 		if ([userDefaults objectForKey:MGMGRIgnoreAll]==nil || ![[userDefaults objectForKey:MGMGRIgnoreAll] boolValue]) {
 			NSFileManager *manager = [NSFileManager defaultManager];
-			NSString *applicationName = [[MGMSystemInfo new] applicationEXECName];
+			NSString *applicationName = [[[MGMSystemInfo new] autorelease] applicationEXECName];
 			if (lastDate!=nil) {
 				[lastDate release];
 				lastDate = nil;
@@ -68,11 +61,11 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 				MGMLog(@"Latest Crash Report %@, %@", lastDate, lastCrashFile);
 				if ([userDefaults objectForKey:MGMGRSendAll]!=nil && [[userDefaults objectForKey:MGMGRSendAll] boolValue]) {
 					if (mailSender==nil) {
-						mailSender = [[MGMSender new] retain];
+						mailSender = [MGMSender new];
 						[mailSender sendReport:lastCrashFile reportDate:lastDate userReport:@"User set to send all." delegate:self];
 					}
 				} else {
-					[MGMReportWindow newWindowWithReport:lastCrashFile reportDate:lastDate];
+					[MGMReportWindow sharedWindowWithReport:lastCrashFile reportDate:lastDate];
 				}
 			} else {
 				[[NSNotificationCenter defaultCenter] postNotificationName:MGMGRDoneNotification object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:NO], MGMSaveLastDate, nil]];

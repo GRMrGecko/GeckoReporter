@@ -31,10 +31,6 @@ NSString * const MGMModel = @"hw.model";
 @end
 
 @implementation MGMSystemInfo
-+ (id)new {
-	return [[[self alloc] init] autorelease];
-}
-
 - (int)valueFromSystem:(NSString *)theName {
 	int value = 0;
 	unsigned long length = sizeof(value);
@@ -205,6 +201,62 @@ NSString * const MGMModel = @"hw.model";
 			return @"Liger";
 	}
 	return @"Unknown";
+}
+
+- (BOOL)isAfterCheetah {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>0);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterPuma {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>1);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterJaguar {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>2);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterPanther {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>3);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterTiger {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>4);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterLeopard {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>5);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterSnowLeopard {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion=>6);
+	}
+	return NO;
 }
 
 - (NSString *)language {

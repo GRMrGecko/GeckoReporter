@@ -19,6 +19,7 @@
 	IBOutlet NSButton *cancelButton;
 	MGMSender *mailSender;
 }
++ (id)sharedBugWindow;
 - (void)setButtonsEnabled:(BOOL)flag;
 - (void)close;
 - (IBAction)send:(id)sender;

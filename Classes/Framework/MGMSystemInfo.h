@@ -25,6 +25,13 @@
 - (int)OSBugFixVersion;
 - (NSString *)OSVersion;
 - (NSString *)OSVersionName;
+- (BOOL)isAfterCheetah;
+- (BOOL)isAfterPuma;
+- (BOOL)isAfterJaguar;
+- (BOOL)isAfterPanther;
+- (BOOL)isAfterTiger;
+- (BOOL)isAfterLeopard;
+- (BOOL)isAfterSnowLeopard;
 - (NSString *)language;
 - (NSString *)applicationIdentifier;
 - (NSString *)applicationName;

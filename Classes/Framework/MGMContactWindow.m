@@ -13,7 +13,7 @@
 #import "MGMLog.h"
 
 @implementation MGMContactWindow
-+ (id)new {
++ (id)sharedContactWindow {
 	return [[self alloc] init];
 }
 - (id)init {
@@ -67,7 +67,7 @@
 		[[NSUserDefaults standardUserDefaults] setObject:[userEmailField stringValue] forKey:MGMGRUserEmail];
 		[[NSUserDefaults standardUserDefaults] setObject:[userNameField stringValue] forKey:MGMGRUserName];
 		if (mailSender==nil) {
-			mailSender = [[MGMSender new] retain];
+			mailSender = [MGMSender new];
 			[mailSender sendMessage:[[messageView textStorage] string] subject:[subjectPopUp titleOfSelectedItem] delegate:self];
 		}
 		[sendButton setTitle:MGMLocalized(@"Sending...", nil)];

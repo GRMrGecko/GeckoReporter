@@ -12,9 +12,9 @@
 
 @implementation MGMFeedback
 - (IBAction)openBugReport:(id)sender {
-	[MGMBugWindow new];
+	[MGMBugWindow sharedBugWindow];
 }
 - (IBAction)openContact:(id)sender {
-	[MGMContactWindow new];
+	[MGMContactWindow sharedContactWindow];
 }
 @end

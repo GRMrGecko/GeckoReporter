@@ -31,7 +31,7 @@ extern NSString * const MGMSaveLastDate;
 	
 	NSMenu *appMainMenu;
 }
-+ (id)newWindowWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate;
++ (id)sharedWindowWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate;
 - (id)initWithReport:(NSString *)theReportFile reportDate:(NSDate *)theReportDate;
 - (void)setButtonsEnabled:(BOOL)flag;
 - (void)close;

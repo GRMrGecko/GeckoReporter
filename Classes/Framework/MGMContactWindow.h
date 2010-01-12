@@ -20,6 +20,7 @@
 	IBOutlet NSButton *cancelButton;
 	MGMSender *mailSender;
 }
++ (id)sharedContactWindow;
 - (void)setButtonsEnabled:(BOOL)flag;
 - (void)close;
 - (IBAction)send:(id)sender;
