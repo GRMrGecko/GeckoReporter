@@ -29,6 +29,9 @@
 				[userNameField setStringValue:[userDefautls objectForKey:MGMGRUserName]];
 			
 			[mainWindow makeKeyAndOrderFront:self];
+			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+			if ([sysInfo isUIElement])
+				[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 		}
 		
 	}

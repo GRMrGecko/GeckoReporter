@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>2A8FF6CE1192232500E27292</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>MGMReportWindow.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>2A8FF6CF1192232500E27292</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>MGMReportWindow.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>2A8FF6D01192232500E27292</string>
+						<key>history</key>
+						<array>
+							<string>2A8FF6CA1191E47400E27292</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1235, 677}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 60 1235 718 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>1280</integer>
@@ -233,8 +274,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -287,14 +326,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>39</integer>
-									<integer>37</integer>
-									<integer>28</integer>
+									<integer>7</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 107}, {185, 660}}</string>
+							<string>{{0, 0}, {185, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -327,7 +366,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>2A478DDD10E8598900EBC4A9</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MGMReporter.m</string>
+								<string>NSThread.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -335,16 +374,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>2A478DDE10E8598900EBC4A9</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MGMReporter.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>2A5B7B1C10FCBA9500051C18</string>
-										<key>history</key>
-										<array>
-											<string>2A85029A10F05D6B00CA1273</string>
-											<string>2A5B7B1010FCBA8B00051C18</string>
-										</array>
+										<string>NSThread.h</string>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -383,8 +413,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 646}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -406,6 +434,8 @@
 									<string>PBXProjectFindModule</string>
 								</dict>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXCVSModuleFilterTypeKey</key>
@@ -440,6 +470,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 646}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXCVSModule</string>
@@ -487,11 +519,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2A5B7B1310FCBA9400051C18</string>
+				<string>2A8FF6BE1191E1FB00E27292</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2A5B7B1410FCBA9400051C18</string>
+				<string>2A8FF6BF1191E1FB00E27292</string>
 				<string>2A478DDD10E8598900EBC4A9</string>
-				<string>2A5B7B1510FCBA9400051C18</string>
+				<string>2A8FF6C01191E1FB00E27292</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -683,7 +715,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2A5B7B1B10FCBA9400051C18</string>
+		<string>2A8FF6CE1192232500E27292</string>
 		<string>/Development/James' Applications/GeckoReporter/GeckoReporter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

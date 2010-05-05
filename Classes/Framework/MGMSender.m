@@ -35,7 +35,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 
 @implementation MGMSender
 - (void)dealloc {
-#if releaseDebug
+#if MGMGRReleaseDebug
 	MGMLog(@"%s Releasing", __PRETTY_FUNCTION__);
 #endif
 	if (theConnection!=nil)

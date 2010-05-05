@@ -37,6 +37,7 @@
 - (NSString *)applicationName;
 - (NSString *)applicationEXECName;
 - (NSString *)applicationVersion;
+- (BOOL)isUIElement;
 - (NSBundle *)frameworkBundle;
 - (NSString *)frameworkVersion;
 - (NSString *)useragentWithApplicationNameAndVersion:(NSString *)nameAndVersion;

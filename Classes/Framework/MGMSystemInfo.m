@@ -196,8 +196,10 @@ NSString * const MGMModel = @"hw.model";
 		if (minorVersion==6)
 			return @"Snow Leopard";
 		if (minorVersion==7)
-			return @"Garfield";
+			return @"Lynx";
 		if (minorVersion==8)
+			return @"Garfield";
+		if (minorVersion==9)
 			return @"Liger";
 	}
 	return @"Unknown";
@@ -280,6 +282,10 @@ NSString * const MGMModel = @"hw.model";
 
 - (NSString *)applicationVersion {
 	return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+}
+
+- (BOOL)isUIElement {
+	return [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"LSUIElement"] boolValue];
 }
 
 - (NSBundle *)frameworkBundle {

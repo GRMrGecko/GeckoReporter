@@ -15,7 +15,7 @@ extern NSString * const MGMGRLastCrashDate;
 extern NSString * const MGMGRSendAll;
 extern NSString * const MGMGRIgnoreAll;
 
-#define releaseDebug 1
+#define MGMGRReleaseDebug 0
 
 @class MGMSender;
 

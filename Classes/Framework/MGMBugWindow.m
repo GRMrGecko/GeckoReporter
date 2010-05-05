@@ -27,6 +27,9 @@
 				[userEmailField setStringValue:[userDefautls objectForKey:MGMGRUserEmail]];
 			
 			[mainWindow makeKeyAndOrderFront:self];
+			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+			if ([sysInfo isUIElement])
+				[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 		}
 		
 	}

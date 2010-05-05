@@ -78,7 +78,7 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 }
 
 - (void)dealloc {
-#if releaseDebug
+#if MGMGRReleaseDebug
 	MGMLog(@"%s Releasing", __PRETTY_FUNCTION__);
 #endif
 	if (lastDate!=nil)

@@ -27,17 +27,16 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 		} else {
 			reportFile = [theReportFile retain];
 			reportDate = [theReportDate retain];
-			NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 			NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
 			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
 			NSString *applicationName = [sysInfo applicationName];
 			
 			appMainMenu = [[[NSApplication sharedApplication] mainMenu] retain];
 			[[NSApplication sharedApplication] setMainMenu:mainMenu];
-			if ([[infoDictionary objectForKey:@"LSUIElement"] boolValue])
-				 [[NSApplication sharedApplication] requestUserAttention:NSInformationalRequest];
-			else
+			if ([sysInfo isUIElement])
 				[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+			else
+				[[NSApplication sharedApplication] requestUserAttention:NSInformationalRequest];
 			NSBeep();
 			
 			if (applicationName==nil)
@@ -59,7 +58,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 	return self;
 }
 - (void)dealloc {
-#if releaseDebug
+#if MGMGRReleaseDebug
 	MGMLog(@"%s Releasing", __PRETTY_FUNCTION__);
 #endif
 	if (reportFile!=nil)
