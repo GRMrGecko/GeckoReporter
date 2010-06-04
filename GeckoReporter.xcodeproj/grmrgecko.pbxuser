@@ -136,12 +136,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 294773209;
-			PBXWorkspaceStateSaveDate = 294773209;
+			PBXPerProjectTemplateStateSaveDate = 297304370;
+			PBXWorkspaceStateSaveDate = 297304370;
 		};
 		perUserProjectItems = {
-			2A8FF6CA1191E47400E27292 /* PBXBookmark */ = 2A8FF6CA1191E47400E27292 /* PBXBookmark */;
-			2A8FF6D01192232500E27292 /* PBXTextBookmark */ = 2A8FF6D01192232500E27292 /* PBXTextBookmark */;
+			2A8FF6CA1191E47400E27292 = 2A8FF6CA1191E47400E27292 /* PBXBookmark */;
+			2A8FF6D01192232500E27292 = 2A8FF6D01192232500E27292 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2A478DA110E8456500EBC4A9 /* Source Control */;
 		userBuildSettings = {
@@ -187,9 +187,9 @@
 	};
 	2A85014810EFA81C00CA1273 /* MGMBugWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1170}}";
-			sepNavSelRange = "{784, 164}";
-			sepNavVisRange = "{0, 1237}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 1196}}";
+			sepNavSelRange = "{308, 0}";
+			sepNavVisRange = "{0, 1232}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -225,9 +225,9 @@
 	};
 	2AB2902910F132290080C6A1 /* MGMContactWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1430}}";
-			sepNavSelRange = "{932, 164}";
-			sepNavVisRange = "{0, 1341}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 1417}}";
+			sepNavSelRange = "{916, 43}";
+			sepNavVisRange = "{0, 1328}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};

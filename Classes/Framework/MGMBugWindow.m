@@ -10,6 +10,7 @@
 #import "MGMReporter.h"
 #import "MGMSender.h"
 #import "MGMLocalized.h"
+#import "MGMSystemInfo.h"
 #import "MGMLog.h"
 
 @implementation MGMBugWindow
