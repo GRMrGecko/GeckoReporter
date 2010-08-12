@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A85014410EFA6A700CA1273 /* MGMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A85014210EFA6A700CA1273 /* MGMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A85014510EFA6A700CA1273 /* MGMFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85014310EFA6A700CA1273 /* MGMFeedback.m */; };
-		2A85014910EFA81C00CA1273 /* MGMBugWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A85014710EFA81C00CA1273 /* MGMBugWindow.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2A85014910EFA81C00CA1273 /* MGMBugWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A85014710EFA81C00CA1273 /* MGMBugWindow.h */; settings = {ATTRIBUTES = (); }; };
 		2A85014A10EFA81C00CA1273 /* MGMBugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85014810EFA81C00CA1273 /* MGMBugWindow.m */; };
 		2A8502FD10F0636600CA1273 /* MGMSenderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8502FC10F0636600CA1273 /* MGMSenderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AB2902A10F132290080C6A1 /* MGMContactWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2902810F132290080C6A1 /* MGMContactWindow.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2AB2902A10F132290080C6A1 /* MGMContactWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2902810F132290080C6A1 /* MGMContactWindow.h */; settings = {ATTRIBUTES = (); }; };
 		2AB2902B10F132290080C6A1 /* MGMContactWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2902910F132290080C6A1 /* MGMContactWindow.m */; };
 		2AB297AF10F51A070080C6A1 /* GeckoReporter.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2AB297A510F5173F0080C6A1 /* GeckoReporter.icns */; };
 		2AB2984610F54BA00080C6A1 /* GeckoReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983110F54BA00080C6A1 /* GeckoReporter.strings */; };
@@ -20,12 +20,12 @@
 		2AB2984A10F54BA00080C6A1 /* MGMContactWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983910F54BA00080C6A1 /* MGMContactWindow.xib */; };
 		2AB2984B10F54BA00080C6A1 /* MGMReportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983B10F54BA00080C6A1 /* MGMReportWindow.xib */; };
 		2AB2984C10F54BA00080C6A1 /* ModelNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2984110F54BA00080C6A1 /* ModelNames.plist */; };
-		2AB2985D10F54D490080C6A1 /* MGMLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2985C10F54D490080C6A1 /* MGMLocalized.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2AB2985D10F54D490080C6A1 /* MGMLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2985C10F54D490080C6A1 /* MGMLocalized.h */; settings = {ATTRIBUTES = (); }; };
 		2AB2987F10F5537D0080C6A1 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2987E10F5537D0080C6A1 /* License.txt */; };
 		2AC8695410EE8062000743D2 /* GeckoReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694A10EE8062000743D2 /* GeckoReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695510EE8062000743D2 /* MGMReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694B10EE8062000743D2 /* MGMReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695610EE8062000743D2 /* MGMReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8694C10EE8062000743D2 /* MGMReporter.m */; };
-		2AC8695710EE8062000743D2 /* MGMReportWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694D10EE8062000743D2 /* MGMReportWindow.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2AC8695710EE8062000743D2 /* MGMReportWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694D10EE8062000743D2 /* MGMReportWindow.h */; settings = {ATTRIBUTES = (); }; };
 		2AC8695810EE8062000743D2 /* MGMReportWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8694E10EE8062000743D2 /* MGMReportWindow.m */; };
 		2AC8695910EE8062000743D2 /* MGMSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694F10EE8062000743D2 /* MGMSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695B10EE8062000743D2 /* MGMSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8695110EE8062000743D2 /* MGMSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -286,13 +286,13 @@
 			files = (
 				2AC8695410EE8062000743D2 /* GeckoReporter.h in Headers */,
 				2AC8695510EE8062000743D2 /* MGMReporter.h in Headers */,
-				2AC8695710EE8062000743D2 /* MGMReportWindow.h in Headers */,
 				2AC8695910EE8062000743D2 /* MGMSender.h in Headers */,
 				2AC8695B10EE8062000743D2 /* MGMSystemInfo.h in Headers */,
 				2AC86B4710EE9DD7000743D2 /* MGMLog.h in Headers */,
 				2A85014410EFA6A700CA1273 /* MGMFeedback.h in Headers */,
-				2A85014910EFA81C00CA1273 /* MGMBugWindow.h in Headers */,
 				2A8502FD10F0636600CA1273 /* MGMSenderDelegate.h in Headers */,
+				2AC8695710EE8062000743D2 /* MGMReportWindow.h in Headers */,
+				2A85014910EFA81C00CA1273 /* MGMBugWindow.h in Headers */,
 				2AB2902A10F132290080C6A1 /* MGMContactWindow.h in Headers */,
 				2AB2985D10F54D490080C6A1 /* MGMLocalized.h in Headers */,
 			);
@@ -505,12 +505,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "GeckoReporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = GeckoReporter;
-				SDKROOT = macosx10.4;
-				"SDKROOT[arch=*]" = macosx10.5;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -527,12 +524,9 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "GeckoReporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = GeckoReporter;
-				SDKROOT = macosx10.4;
-				"SDKROOT[arch=x86_64]" = macosx10.5;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -541,26 +535,39 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Debug;
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};
@@ -575,7 +582,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "GeckoReporter Test-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -586,8 +592,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "GeckoReporter Test";
-				SDKROOT = macosx10.4;
-				"SDKROOT[arch=*]" = macosx10.5;
 			};
 			name = Debug;
 		};
@@ -601,7 +605,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
-				GCC_VERSION = 4.0;
 				INFOPLIST_FILE = "GeckoReporter Test-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -612,8 +615,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "GeckoReporter Test";
-				SDKROOT = macosx10.4;
-				"SDKROOT[arch=x86_64]" = macosx10.5;
 				ZERO_LINK = NO;
 			};
 			name = Release;

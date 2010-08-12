@@ -1,50 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFile</key>
-	<string>GeckoReporter</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2010 by Mr. Gecko&apos;s Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/</string>
-	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
-	<key>CFBundleVersion</key>
-	<string>0.1</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>MGMGRCrashEmail</key>
-	<string>crashreports@mrgeckosmedia.com</string>
-	<key>MGMGRBugsEmail</key>
-	<string>bugs@mrgeckosmedia.com</string>
-	<key>MGMGRContactEmail</key>
-	<string>support@mrgeckosmedia.com</string>
-	<key>MGMGRLogFiles</key>
-	<string>~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}.log ~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}_2.log</string>
-	<key>MGMGRReportFileAttached</key>
-	<true/>
-	<key>MGMGRTimeFormat</key>
-	<string>%A, %m/%d/%y %I:%M:%S %p</string>
-	<key>MGMGRTimeZone</key>
-	<string>CST</string>
-	<key>MGMGRURL</key>
-	<string>https://mrgeckosmedia.com/sendreport.php</string>
-</dict>
-</plist>
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = "${EXECUTABLE_NAME}";
+	CFBundleIconFile = GeckoReporter;
+	CFBundleIdentifier = "com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundleName = "${PRODUCT_NAME}";
+	CFBundlePackageType = APPL;
+	CFBundleSignature = "????";
+	"NSHumanReadableCopyright" = "Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
+	"CFBundleShortVersionString" = "0.1";
+	CFBundleVersion = "0.1";
+	"LSMinimumSystemVersion" = "${MACOSX_DEPLOYMENT_TARGET}";
+	NSPrincipalClass = NSApplication;
+	NSMainNibFile = MainMenu;
+	MGMGRCrashEmail = "crashreports@mrgeckosmedia.com";
+	MGMGRBugsEmail = "bugs@mrgeckosmedia.com";
+	MGMGRContactEmail = "support@mrgeckosmedia.com";
+	MGMGRLogFiles = "~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}.log ~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}_2.log";
+	"MGMGRReportFileAttached" = YES;
+	MGMGRTimeFormat = "%A, %m/%d/%y %I:%M:%S %p";
+	MGMGRTimeZone = CST;
+	MGMGRURL = "http://mrgeckosmedia.com/sendreport.php";
+}

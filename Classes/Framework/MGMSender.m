@@ -3,7 +3,7 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/28/09.
-//  Copyright 2010 by Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
 //
 
 #import "MGMSender.h"
@@ -17,7 +17,7 @@ NSString * const MGMDefaultTimeFormat = @"%a, %m/%d/%y %H:%M:%S %Z";
 NSString * const MGMDefaultCrashEmail = @"crashreports@mrgeckosmedia.com";
 NSString * const MGMDefaultBugsEmail = @"bugs@mrgeckosmedia.com";
 NSString * const MGMDefaultContactEmail = @"support@mrgeckosmedia.com";
-NSString * const MGMDefaultURL = @"https://mrgeckosmedia.com/sendreport.php";
+NSString * const MGMDefaultURL = @"http://mrgeckosmedia.com/sendreport.php";
 
 NSString * const MGMGRTimeZone = @"MGMGRTimeZone";
 NSString * const MGMGRTimeFormat = @"MGMGRTimeFormat";
@@ -111,7 +111,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	return data;
 }
 - (NSDictionary *)defaultObjects {
-	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+	MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 	NSMutableDictionary *objects = [NSMutableDictionary dictionary];
 	[objects setObject:[sysInfo frameworkVersion] forKey:@"GRVersion"];
 	[objects setObject:[sysInfo applicationName] forKey:@"Application"];
@@ -153,7 +153,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+	MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil, *logFiles = nil;
 	BOOL reportAttached = NO;
@@ -233,7 +233,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+	MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil;
 	if ([userDefaults objectForKey:MGMGRBugsEmail]!=nil && ![[userDefaults objectForKey:MGMGRBugsEmail] isEqualToString:@""]) {
@@ -293,7 +293,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 		delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-	MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+	MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 	
 	NSString *email = nil, *url = nil, *userEmail = nil, *userName = nil;
 	if ([userDefaults objectForKey:MGMGRContactEmail]!=nil && ![[userDefaults objectForKey:MGMGRContactEmail] isEqualToString:@""]) {

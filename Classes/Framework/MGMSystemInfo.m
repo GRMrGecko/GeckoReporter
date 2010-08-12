@@ -3,7 +3,7 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/31/09.
-//  Copyright 2010 by Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
 //
 
 #import "MGMSystemInfo.h"
@@ -31,6 +31,10 @@ NSString * const MGMModel = @"hw.model";
 @end
 
 @implementation MGMSystemInfo
++ (MGMSystemInfo *)info {
+	return [[[self alloc] init] autorelease];
+}
+
 - (int)valueFromSystem:(NSString *)theName {
 	int value = 0;
 	unsigned long length = sizeof(value);
@@ -273,15 +277,15 @@ NSString * const MGMModel = @"hw.model";
 }
 
 - (NSString *)applicationName {
-	return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+	return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey];
 }
 
 - (NSString *)applicationEXECName {
-	return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleExecutable"];
+	return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleExecutableKey];
 }
 
 - (NSString *)applicationVersion {
-	return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+	return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
 }
 
 - (BOOL)isUIElement {
@@ -293,7 +297,7 @@ NSString * const MGMModel = @"hw.model";
 }
 
 - (NSString *)frameworkVersion {
-	return [FRAMEWORKBUNDLE objectForInfoDictionaryKey:@"CFBundleVersion"];
+	return [FRAMEWORKBUNDLE objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
 }
 
 - (NSString *)useragentWithApplicationNameAndVersion:(NSString *)nameAndVersion {

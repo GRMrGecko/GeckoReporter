@@ -3,7 +3,7 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 1/3/10.
-//  Copyright 2010 by Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
 //
 
 #import "MGMContactWindow.h"
@@ -30,7 +30,7 @@
 				[userNameField setStringValue:[userDefautls objectForKey:MGMGRUserName]];
 			
 			[mainWindow makeKeyAndOrderFront:self];
-			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+			MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 			if ([sysInfo isUIElement])
 				[[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 		}

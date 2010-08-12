@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>2A8FF6CE1192232500E27292</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>MGMReportWindow.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>2A8FF6CF1192232500E27292</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>MGMReportWindow.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>2A8FF6D01192232500E27292</string>
-						<key>history</key>
-						<array>
-							<string>2A8FF6CA1191E47400E27292</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1235, 677}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 60 1235 718 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>1280</integer>
@@ -326,7 +285,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>5</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -418,6 +377,8 @@
 									<string>XCDetailModule</string>
 								</dict>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -429,38 +390,17 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 646}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXCVSModuleFilterTypeKey</key>
 										<integer>1032</integer>
-										<key>PBXCVSModuleTreeModuleColumnData</key>
-										<dict>
-											<key>PBXCVSModuleTreeModuleColumnWidthsKey</key>
-											<array>
-												<real>655</real>
-												<real>56</real>
-												<real>63</real>
-												<real>60</real>
-												<real>63</real>
-												<real>139</real>
-											</array>
-											<key>PBXCVSModuleTreeModuleColumnsKey</key>
-											<array>
-												<string>Name</string>
-												<string>Status</string>
-												<string>Update</string>
-												<string>Revision</string>
-												<string>Author</string>
-												<string>Date</string>
-											</array>
-										</dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CA23EE10692099D00951B8B</string>
 										<key>PBXProjectModuleLabel</key>
@@ -470,8 +410,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 646}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXCVSModule</string>
@@ -519,11 +457,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2A8FF6BE1191E1FB00E27292</string>
+				<string>2A1B4B2912145FD700C1F8A0</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2A8FF6BF1191E1FB00E27292</string>
+				<string>2A1B4B2A12145FD700C1F8A0</string>
 				<string>2A478DDD10E8598900EBC4A9</string>
-				<string>2A8FF6C01191E1FB00E27292</string>
+				<string>2A1B4B2B12145FD700C1F8A0</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -674,14 +612,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2A5B7B1610FCBA9400051C18</string>
+				<string>2AF1C1461214451C008E7D29</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>2A5B7B1710FCBA9400051C18</string>
-				<string>2A5B7B1810FCBA9400051C18</string>
-				<string>2A5B7B1910FCBA9400051C18</string>
-				<string>2A5B7B1A10FCBA9400051C18</string>
-				<string>2A478DDD10E8598900EBC4A9</string>
+				<string>2AF1C1471214451C008E7D29</string>
+				<string>2AF1C1481214451C008E7D29</string>
+				<string>2AF1C1491214451C008E7D29</string>
+				<string>2AF1C14A1214451C008E7D29</string>
+				<string>2AF1C14B1214451C008E7D29</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -715,7 +653,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2A8FF6CE1192232500E27292</string>
 		<string>/Development/James' Applications/GeckoReporter/GeckoReporter.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1557,7 +1494,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>2A478EAD10E881CF00EBC4A9</string>
-				<string>2A5B7AD010FCB63600051C18</string>
+				<string>2A3B3EB012145370002E3055</string>
 				<string>2A478EAC10E881CF00EBC4A9</string>
 			</array>
 			<key>WindowString</key>

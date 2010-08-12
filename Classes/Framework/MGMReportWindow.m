@@ -3,7 +3,7 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/27/09.
-//  Copyright 2010 by Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
 //
 
 #import "MGMReportWindow.h"
@@ -28,7 +28,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 			reportFile = [theReportFile retain];
 			reportDate = [theReportDate retain];
 			NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
-			MGMSystemInfo *sysInfo = [[MGMSystemInfo new] autorelease];
+			MGMSystemInfo *sysInfo = [MGMSystemInfo info];
 			NSString *applicationName = [sysInfo applicationName];
 			
 			appMainMenu = [[[NSApplication sharedApplication] mainMenu] retain];

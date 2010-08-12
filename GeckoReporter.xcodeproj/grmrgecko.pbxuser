@@ -136,12 +136,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 297304370;
-			PBXWorkspaceStateSaveDate = 297304370;
-		};
-		perUserProjectItems = {
-			2A8FF6CA1191E47400E27292 = 2A8FF6CA1191E47400E27292 /* PBXBookmark */;
-			2A8FF6D01192232500E27292 = 2A8FF6D01192232500E27292 /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 303325059;
+			PBXWorkspaceStateSaveDate = 303325059;
 		};
 		sourceControlManager = 2A478DA110E8456500EBC4A9 /* Source Control */;
 		userBuildSettings = {
@@ -173,7 +169,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 646}}";
 			sepNavSelRange = "{362, 0}";
-			sepNavVisRange = "{0, 452}";
+			sepNavVisRange = "{0, 453}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -187,9 +183,9 @@
 	};
 	2A85014810EFA81C00CA1273 /* MGMBugWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1196}}";
-			sepNavSelRange = "{308, 0}";
-			sepNavVisRange = "{0, 1232}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 1209}}";
+			sepNavSelRange = "{878, 11}";
+			sepNavVisRange = "{79, 1224}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -201,20 +197,6 @@
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
-	2A8FF6CA1191E47400E27292 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 2AC8694E10EE8062000743D2 /* MGMReportWindow.m */;
-	};
-	2A8FF6D01192232500E27292 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2AC8694E10EE8062000743D2 /* MGMReportWindow.m */;
-		name = "MGMReportWindow.m: 31";
-		rLen = 59;
-		rLoc = 974;
-		rType = 0;
-		vrLen = 2178;
-		vrLoc = 0;
-	};
 	2AB2902810F132290080C6A1 /* MGMContactWindow.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 646}}";
@@ -225,9 +207,9 @@
 	};
 	2AB2902910F132290080C6A1 /* MGMContactWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1417}}";
-			sepNavSelRange = "{916, 43}";
-			sepNavVisRange = "{0, 1328}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 1430}}";
+			sepNavSelRange = "{989, 0}";
+			sepNavVisRange = "{0, 1316}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -247,7 +229,7 @@
 	2AB2984D10F54BB40080C6A1 /* pt_PT */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1601, 646}}";
-			sepNavSelRange = "{1209, 0}";
+			sepNavSelRange = "{669, 0}";
 			sepNavVisRange = "{0, 1212}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
@@ -255,7 +237,7 @@
 	2AB2985110F54C1E0080C6A1 /* es */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1524, 646}}";
-			sepNavSelRange = "{1160, 0}";
+			sepNavSelRange = "{125, 8}";
 			sepNavVisRange = "{0, 1163}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
@@ -270,9 +252,10 @@
 	};
 	2AB2987E10F5537D0080C6A1 /* License.txt */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 646}}";
-			sepNavSelRange = "{670, 0}";
-			sepNavVisRange = "{0, 1229}";
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 646}}";
+			sepNavSelRange = "{1379, 0}";
+			sepNavVisRange = "{0, 1379}";
+			sepNavWindowFrame = "{{0, 4}, {1280, 774}}";
 		};
 	};
 	2AC8693C10EE7EDE000743D2 /* Prefix.pch */ = {
@@ -301,9 +284,9 @@
 	};
 	2AC8694C10EE8062000743D2 /* MGMReporter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 1352}}";
-			sepNavSelRange = "{835, 0}";
-			sepNavVisRange = "{0, 2162}";
+			sepNavIntBoundsRect = "{{0, 0}, {1503, 1404}}";
+			sepNavSelRange = "{2898, 0}";
+			sepNavVisRange = "{0, 2172}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -317,9 +300,9 @@
 	};
 	2AC8694E10EE8062000743D2 /* MGMReportWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1475, 1690}}";
-			sepNavSelRange = "{974, 59}";
-			sepNavVisRange = "{0, 2178}";
+			sepNavIntBoundsRect = "{{0, 0}, {1475, 1781}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{808, 1931}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -334,16 +317,16 @@
 	2AC8695110EE8062000743D2 /* MGMSystemInfo.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 646}}";
-			sepNavSelRange = "{891, 0}";
-			sepNavVisRange = "{0, 1067}";
+			sepNavSelRange = "{359, 8}";
+			sepNavVisRange = "{0, 1092}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
 	2AC8695210EE8062000743D2 /* MGMSystemInfo.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1176, 4043}}";
-			sepNavSelRange = "{6602, 11}";
-			sepNavVisRange = "{5911, 1575}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 4121}}";
+			sepNavSelRange = "{6760, 42}";
+			sepNavVisRange = "{6002, 1700}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
@@ -465,16 +448,16 @@
 	2AC86B4610EE9DD7000743D2 /* MGMLog.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 1196}}";
-			sepNavSelRange = "{201, 3032}";
-			sepNavVisRange = "{0, 1785}";
+			sepNavSelRange = "{201, 508}";
+			sepNavVisRange = "{710, 1826}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};
 	2AC86CF010EEC54C000743D2 /* MGMSender.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1496, 5018}}";
-			sepNavSelRange = "{10263, 0}";
-			sepNavVisRange = "{13505, 2481}";
+			sepNavIntBoundsRect = "{{0, 0}, {1176, 5226}}";
+			sepNavSelRange = "{671, 0}";
+			sepNavVisRange = "{0, 1737}";
 			sepNavWindowFrame = "{{15, 4}, {1235, 774}}";
 		};
 	};

@@ -3,7 +3,7 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/27/09.
-//  Copyright 2010 by Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
 //
 
 #import "MGMReporter.h"
@@ -11,6 +11,8 @@
 #import "MGMSender.h"
 #import "MGMSystemInfo.h"
 #import "MGMLog.h"
+
+NSString * const MGMCopyright = @"Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
 
 NSString * const MGMReportsPath = @"~/Library/Logs/CrashReporter";
 NSString * const MGMGRDoneNotification = @"MGMGRDoneNotification";
@@ -31,7 +33,7 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 		NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 		if ([userDefaults objectForKey:MGMGRIgnoreAll]==nil || ![[userDefaults objectForKey:MGMGRIgnoreAll] boolValue]) {
 			NSFileManager *manager = [NSFileManager defaultManager];
-			NSString *applicationName = [[[MGMSystemInfo new] autorelease] applicationEXECName];
+			NSString *applicationName = [[MGMSystemInfo info] applicationEXECName];
 			if (lastDate!=nil) {
 				[lastDate release];
 				lastDate = nil;
@@ -45,13 +47,13 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 					NSString *file = [[MGMReportsPath stringByAppendingPathComponent:crashFile] stringByResolvingSymlinksInPath];
 					BOOL readable = [manager isReadableFileAtPath:file];
 					NSDictionary *attributes = [crashFiles fileAttributes];
-					NSDate *creationDate = [attributes objectForKey:NSFileCreationDate];
-					if (readable && (lastDate==nil || (creationDate==[lastDate laterDate:creationDate]))) {
+					NSDate *modifiedDate = [attributes objectForKey:NSFileModificationDate];
+					if (readable && (lastDate==nil || (![lastDate isEqual:modifiedDate] && [lastDate laterDate:modifiedDate]==modifiedDate))) {
 						if (lastDate!=nil) {
 							[lastDate release];
 							lastDate = nil;
 						}
-						lastDate = [creationDate retain];
+						lastDate = [modifiedDate retain];
 						lastCrashFile = file;
 						foundReport = YES;
 					}
