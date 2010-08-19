@@ -77,6 +77,14 @@
 		2A85014710EFA81C00CA1273 /* MGMBugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMBugWindow.h; sourceTree = "<group>"; };
 		2A85014810EFA81C00CA1273 /* MGMBugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMBugWindow.m; sourceTree = "<group>"; };
 		2A8502FC10F0636600CA1273 /* MGMSenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMSenderDelegate.h; sourceTree = "<group>"; };
+		2A9EC75B121DAD3100DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2A9EC75C121DAD6900DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = se.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2A9EC769121DB05F00DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2A9EC76B121DB11100DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2A9EC770121DB1D000DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
+		2A9EC775121DB3FC00DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2A9EC778121DB4B700DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2A9EC77A121DB52200DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
 		2AB2902810F132290080C6A1 /* MGMContactWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMContactWindow.h; sourceTree = "<group>"; };
 		2AB2902910F132290080C6A1 /* MGMContactWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMContactWindow.m; sourceTree = "<group>"; };
 		2AB2922C10F17A950080C6A1 /* GeckoReporter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeckoReporter-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -355,6 +363,7 @@
 				"pt-PT",
 				pt_PT,
 				es,
+				se,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* GeckoReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -436,6 +445,8 @@
 				2AB2983210F54BA00080C6A1 /* English */,
 				2AB2984D10F54BB40080C6A1 /* pt_PT */,
 				2AB2985110F54C1E0080C6A1 /* es */,
+				2A9EC75B121DAD3100DDE277 /* French */,
+				2A9EC75C121DAD6900DDE277 /* se */,
 			);
 			name = GeckoReporter.strings;
 			sourceTree = "<group>";
@@ -446,6 +457,8 @@
 				2AB2983810F54BA00080C6A1 /* English */,
 				2AB2983E10F54BA00080C6A1 /* es */,
 				2AB2984310F54BA00080C6A1 /* pt_PT */,
+				2A9EC769121DB05F00DDE277 /* French */,
+				2A9EC775121DB3FC00DDE277 /* se */,
 			);
 			name = MGMBugWindow.xib;
 			sourceTree = "<group>";
@@ -456,6 +469,8 @@
 				2AB2983A10F54BA00080C6A1 /* English */,
 				2AB2983F10F54BA00080C6A1 /* es */,
 				2AB2984410F54BA00080C6A1 /* pt_PT */,
+				2A9EC76B121DB11100DDE277 /* French */,
+				2A9EC778121DB4B700DDE277 /* se */,
 			);
 			name = MGMContactWindow.xib;
 			sourceTree = "<group>";
@@ -466,6 +481,8 @@
 				2AB2983C10F54BA00080C6A1 /* English */,
 				2AB2984010F54BA00080C6A1 /* es */,
 				2AB2984510F54BA00080C6A1 /* pt_PT */,
+				2A9EC770121DB1D000DDE277 /* French */,
+				2A9EC77A121DB52200DDE277 /* se */,
 			);
 			name = MGMReportWindow.xib;
 			sourceTree = "<group>";

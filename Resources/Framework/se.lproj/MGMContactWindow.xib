@@ -43,7 +43,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{414, 230}, {452, 318}}</string>
 				<int key="NSWTFlags">1618477056</int>
-				<string key="NSWindowTitle">Contact Me</string>
+				<string key="NSWindowTitle">Kontakta mig</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -62,7 +62,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="143538231">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Include your email so I can respond.</string>
+								<string key="NSContents">Lämna din e-post så jag kan svara.</string>
 								<object class="NSFont" key="NSSupport" id="871674610">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -128,7 +128,7 @@
 							<object class="NSButtonCell" key="NSCell" id="798299430">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Send</string>
+								<string key="NSContents">Skicka</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="101441517"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -148,7 +148,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="261832961">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">71304192</int>
-								<string key="NSContents">Subject:</string>
+								<string key="NSContents">Ämne:</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="451928634"/>
 								<reference key="NSBackgroundColor" ref="5566887"/>
@@ -320,7 +320,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="643361309">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Whom am I to refer you by?</string>
+								<string key="NSContents">Vad ska jag kalla dig för?</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="314840553"/>
 								<reference key="NSBackgroundColor" ref="5566887"/>
@@ -387,7 +387,7 @@
 										<reference ref="794160880"/>
 										<object class="NSMenuItem" id="778855082">
 											<reference key="NSMenu" ref="947525422"/>
-											<string key="NSTitle">Feature Request</string>
+											<string key="NSTitle">Begär en funktion</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
@@ -425,7 +425,7 @@
 							<object class="NSButtonCell" key="NSCell" id="530796692">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Cancel</string>
+								<string key="NSContents">Avbryt</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="551790836"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -439,13 +439,13 @@
 						<object class="NSTextField" id="236983465">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{236, 1}, {199, 11}}</string>
+							<string key="NSFrame">{{219, 1}, {216, 11}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="158979443">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Anonymous system information will be sent.</string>
+								<string key="NSContents">Anonym systeminformation kommer att skickas.</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">9</double>

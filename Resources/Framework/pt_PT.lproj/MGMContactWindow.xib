@@ -147,7 +147,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="261832961">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">272630784</int>
+								<int key="NSCellFlags2">71304192</int>
 								<string key="NSContents">Assunto:</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="451928634"/>
@@ -827,9 +827,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>{{439, 146}, {452, 318}}</string>
+					<string>{{440, 145}, {452, 318}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{439, 146}, {452, 318}}</string>
+					<string>{{440, 145}, {452, 318}}</string>
 					<boolean value="NO"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>

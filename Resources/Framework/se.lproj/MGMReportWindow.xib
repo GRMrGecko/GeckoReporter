@@ -42,9 +42,9 @@
 			<object class="NSWindowTemplate" id="1005">
 				<int key="NSWindowStyleMask">13</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{414, 197}, {452, 359}}</string>
+				<string key="NSWindowRect">{{364, 209}, {551, 359}}</string>
 				<int key="NSWTFlags">1618477056</int>
-				<string key="NSWindowTitle">Application Crashed</string>
+				<string key="NSWindowTitle">Application Kraschat</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{2000, 2000}</string>
@@ -89,13 +89,13 @@
 						<object class="NSTextField" id="843895248">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">266</int>
-							<string key="NSFrame">{{89, 275}, {346, 64}}</string>
+							<string key="NSFrame">{{89, 275}, {445, 64}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="424429412">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">272629760</int>
-								<string key="NSContents">Application crashed the last time you ran it.  Would you like to send me a crash report so I can look into it?</string>
+								<string key="NSContents">Application Kraschade sist du körde det.  Vill du skicka en kraschrapport till mig så jag kan undersöka felet?</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande-Bold</string>
 									<double key="NSSize">13</double>
@@ -125,13 +125,13 @@
 						<object class="NSTextField" id="632803095">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">266</int>
-							<string key="NSFrame">{{17, 225}, {418, 17}}</string>
+							<string key="NSFrame">{{17, 225}, {517, 17}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="921281574">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">What were you doing when the crash happened?</string>
+								<string key="NSContents">Vad gjorde du när programmet kraschade?</string>
 								<object class="NSFont" key="NSSupport" id="935714966">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -145,13 +145,13 @@
 						<object class="NSTextField" id="749241003">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">290</int>
-							<string key="NSFrame">{{17, 78}, {418, 17}}</string>
+							<string key="NSFrame">{{17, 78}, {517, 17}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="93486910">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Include an email address so I can update you on the crash?</string>
+								<string key="NSContents">Om du vill bli uppdaterad om ev. lösningar för kraschen lämna din e-postadress.</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="749241003"/>
 								<reference key="NSBackgroundColor" ref="1072916291"/>
@@ -161,7 +161,7 @@
 						<object class="NSTextField" id="408590837">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">290</int>
-							<string key="NSFrame">{{20, 48}, {412, 22}}</string>
+							<string key="NSFrame">{{20, 48}, {511, 22}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="847434622">
@@ -191,13 +191,13 @@
 						<object class="NSButton" id="36997765">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{335, 12}, {103, 32}}</string>
+							<string key="NSFrame">{{434, 12}, {103, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="125185088">
-								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Send</string>
+								<string key="NSContents">Skicka</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="36997765"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -211,13 +211,13 @@
 						<object class="NSButton" id="125399613">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">292</int>
-							<string key="NSFrame">{{115, 12}, {81, 32}}</string>
+							<string key="NSFrame">{{127, 12}, {93, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="999197497">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Ignore</string>
+								<string key="NSContents">Ignorera</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="125399613"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -231,13 +231,13 @@
 						<object class="NSButton" id="122868579">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">292</int>
-							<string key="NSFrame">{{14, 12}, {101, 32}}</string>
+							<string key="NSFrame">{{14, 12}, {119, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="549362944">
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Ignore All</string>
+								<string key="NSContents">Ignorera alla</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="122868579"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -251,13 +251,13 @@
 						<object class="NSButton" id="1028028054">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{239, 12}, {96, 32}}</string>
+							<string key="NSFrame">{{328, 12}, {106, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="840494157">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Send All</string>
+								<string key="NSContents">Skicka alla</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="1028028054"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -294,13 +294,13 @@
 						<object class="NSTextField" id="676545591">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 250}, {84, 17}}</string>
+							<string key="NSFrame">{{17, 250}, {99, 17}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="620693080">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">71304192</int>
-								<string key="NSContents">Report Date:</string>
+								<string key="NSContents">Rapportdatum:</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="676545591"/>
 								<reference key="NSBackgroundColor" ref="1072916291"/>
@@ -310,7 +310,7 @@
 						<object class="NSTextField" id="595621675">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">266</int>
-							<string key="NSFrame">{{103, 250}, {332, 17}}</string>
+							<string key="NSFrame">{{118, 250}, {416, 17}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="476377616">
@@ -359,7 +359,7 @@
 													<string>public.url</string>
 												</object>
 											</object>
-											<string key="NSFrameSize">{395, 14}</string>
+											<string key="NSFrameSize">{494, 14}</string>
 											<reference key="NSSuperview" ref="113944570"/>
 											<object class="NSTextContainer" key="NSTextContainer" id="130275905">
 												<object class="NSLayoutManager" key="NSLayoutManager">
@@ -377,7 +377,7 @@
 													<nil key="NSDelegate"/>
 												</object>
 												<reference key="NSTextView" ref="190000905"/>
-												<double key="NSWidth">395</double>
+												<double key="NSWidth">494</double>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
@@ -438,7 +438,7 @@
 											<nil key="NSDelegate"/>
 										</object>
 									</object>
-									<string key="NSFrame">{{1, 1}, {395, 112}}</string>
+									<string key="NSFrame">{{1, 1}, {494, 112}}</string>
 									<reference key="NSSuperview" ref="256399791"/>
 									<reference key="NSNextKeyView" ref="190000905"/>
 									<reference key="NSDocView" ref="190000905"/>
@@ -452,7 +452,7 @@
 								<object class="NSScroller" id="42263066">
 									<reference key="NSNextResponder" ref="256399791"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{396, 1}, {15, 112}}</string>
+									<string key="NSFrame">{{495, 1}, {15, 112}}</string>
 									<reference key="NSSuperview" ref="256399791"/>
 									<reference key="NSTarget" ref="256399791"/>
 									<string key="NSAction">_doScroller:</string>
@@ -471,7 +471,7 @@
 									<double key="NSPercent">0.94565218687057495</double>
 								</object>
 							</object>
-							<string key="NSFrame">{{20, 103}, {412, 114}}</string>
+							<string key="NSFrame">{{20, 103}, {511, 114}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSNextKeyView" ref="113944570"/>
 							<int key="NSsFlags">18</int>
@@ -482,13 +482,13 @@
 						<object class="NSTextField" id="560348105">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">289</int>
-							<string key="NSFrame">{{236, 1}, {199, 11}}</string>
+							<string key="NSFrame">{{318, 1}, {216, 11}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="98266563">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">Anonymous system information will be sent.</string>
+								<string key="NSContents">Anonym systeminformation kommer att skickas.</string>
 								<reference key="NSSupport" ref="355943881"/>
 								<reference key="NSControlView" ref="560348105"/>
 								<reference key="NSBackgroundColor" ref="1072916291"/>
@@ -499,7 +499,7 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{452, 359}</string>
+					<string key="NSFrameSize">{551, 359}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
@@ -531,14 +531,14 @@
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="608953261">
 									<reference key="NSMenu" ref="817535067"/>
-									<string key="NSTitle">Services</string>
+									<string key="NSTitle">Tjänster</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
 									<reference key="NSMixedImage" ref="781528205"/>
 									<string key="NSAction">submenuAction:</string>
 									<object class="NSMenu" key="NSSubmenu" id="508352733">
-										<string key="NSTitle">Services</string>
+										<string key="NSTitle">Tjänster</string>
 										<object class="NSMutableArray" key="NSMenuItems">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 										</object>
@@ -557,7 +557,7 @@
 								</object>
 								<object class="NSMenuItem" id="857258365">
 									<reference key="NSMenu" ref="817535067"/>
-									<string key="NSTitle">Hide Application</string>
+									<string key="NSTitle">Dölj Application</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -566,7 +566,7 @@
 								</object>
 								<object class="NSMenuItem" id="512340788">
 									<reference key="NSMenu" ref="817535067"/>
-									<string key="NSTitle">Hide Others</string>
+									<string key="NSTitle">Dölj övriga</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1572864</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -575,7 +575,7 @@
 								</object>
 								<object class="NSMenuItem" id="271045817">
 									<reference key="NSMenu" ref="817535067"/>
-									<string key="NSTitle">Show All</string>
+									<string key="NSTitle">Visa alla</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
@@ -593,7 +593,7 @@
 								</object>
 								<object class="NSMenuItem" id="757191436">
 									<reference key="NSMenu" ref="817535067"/>
-									<string key="NSTitle">Quit Application</string>
+									<string key="NSTitle">Avsluta Application</string>
 									<string key="NSKeyEquiv">q</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -606,19 +606,19 @@
 					</object>
 					<object class="NSMenuItem" id="337908444">
 						<reference key="NSMenu" ref="933560928"/>
-						<string key="NSTitle">Edit</string>
+						<string key="NSTitle">Redigera</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="121411531"/>
 						<reference key="NSMixedImage" ref="781528205"/>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="676864266">
-							<string key="NSTitle">Edit</string>
+							<string key="NSTitle">Redigera</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="1030973246">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Undo</string>
+									<string key="NSTitle">Ångra</string>
 									<string key="NSKeyEquiv">z</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -627,7 +627,7 @@
 								</object>
 								<object class="NSMenuItem" id="628346764">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Redo</string>
+									<string key="NSTitle">Gör om</string>
 									<string key="NSKeyEquiv">Z</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -646,7 +646,7 @@
 								</object>
 								<object class="NSMenuItem" id="661844683">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Cut</string>
+									<string key="NSTitle">Klipp ut</string>
 									<string key="NSKeyEquiv">x</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -655,7 +655,7 @@
 								</object>
 								<object class="NSMenuItem" id="714451502">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Copy</string>
+									<string key="NSTitle">Kopiera</string>
 									<string key="NSKeyEquiv">c</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -664,7 +664,7 @@
 								</object>
 								<object class="NSMenuItem" id="768510134">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Paste</string>
+									<string key="NSTitle">Klistra in</string>
 									<string key="NSKeyEquiv">v</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -673,7 +673,7 @@
 								</object>
 								<object class="NSMenuItem" id="935406412">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Delete</string>
+									<string key="NSTitle">Radera</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
@@ -681,7 +681,7 @@
 								</object>
 								<object class="NSMenuItem" id="603231746">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Select All</string>
+									<string key="NSTitle">Välj alla</string>
 									<string key="NSKeyEquiv">a</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -700,19 +700,19 @@
 								</object>
 								<object class="NSMenuItem" id="932063339">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Spelling and Grammar</string>
+									<string key="NSTitle">Stavning och grammatik</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
 									<reference key="NSMixedImage" ref="781528205"/>
 									<string key="NSAction">submenuAction:</string>
 									<object class="NSMenu" key="NSSubmenu" id="420966241">
-										<string key="NSTitle">Spelling and Grammar</string>
+										<string key="NSTitle">Stavning och grammatik</string>
 										<object class="NSMutableArray" key="NSMenuItems">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<object class="NSMenuItem" id="415549596">
 												<reference key="NSMenu" ref="420966241"/>
-												<string key="NSTitle">Show Spelling and Grammar</string>
+												<string key="NSTitle">Visa stavning och grammatik</string>
 												<string key="NSKeyEquiv">:</string>
 												<int key="NSKeyEquivModMask">1048576</int>
 												<int key="NSMnemonicLoc">2147483647</int>
@@ -721,7 +721,7 @@
 											</object>
 											<object class="NSMenuItem" id="747410130">
 												<reference key="NSMenu" ref="420966241"/>
-												<string key="NSTitle">Check Document Now</string>
+												<string key="NSTitle">Kontrollera dokumentet nu</string>
 												<string key="NSKeyEquiv">;</string>
 												<int key="NSKeyEquivModMask">1048576</int>
 												<int key="NSMnemonicLoc">2147483647</int>
@@ -740,7 +740,7 @@
 											</object>
 											<object class="NSMenuItem" id="533754654">
 												<reference key="NSMenu" ref="420966241"/>
-												<string key="NSTitle">Check Spelling While Typing</string>
+												<string key="NSTitle">Kontrollera stavning vid skrivning</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
 												<reference key="NSOnImage" ref="121411531"/>
@@ -748,7 +748,7 @@
 											</object>
 											<object class="NSMenuItem" id="860194085">
 												<reference key="NSMenu" ref="420966241"/>
-												<string key="NSTitle">Check Grammar With Spelling</string>
+												<string key="NSTitle">Kontrollera grammatiken vid stavning</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
 												<reference key="NSOnImage" ref="121411531"/>
@@ -756,7 +756,7 @@
 											</object>
 											<object class="NSMenuItem" id="425553853">
 												<reference key="NSMenu" ref="420966241"/>
-												<string key="NSTitle">Correct Spelling Automatically</string>
+												<string key="NSTitle">Autokorregera stavning</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
 												<reference key="NSOnImage" ref="121411531"/>
@@ -767,19 +767,19 @@
 								</object>
 								<object class="NSMenuItem" id="752291159">
 									<reference key="NSMenu" ref="676864266"/>
-									<string key="NSTitle">Speech</string>
+									<string key="NSTitle">Tal</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
 									<reference key="NSMixedImage" ref="781528205"/>
 									<string key="NSAction">submenuAction:</string>
 									<object class="NSMenu" key="NSSubmenu" id="998271133">
-										<string key="NSTitle">Speech</string>
+										<string key="NSTitle">Tal</string>
 										<object class="NSMutableArray" key="NSMenuItems">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<object class="NSMenuItem" id="101356142">
 												<reference key="NSMenu" ref="998271133"/>
-												<string key="NSTitle">Start Speaking</string>
+												<string key="NSTitle">Börja tala</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
 												<reference key="NSOnImage" ref="121411531"/>
@@ -787,7 +787,7 @@
 											</object>
 											<object class="NSMenuItem" id="207105773">
 												<reference key="NSMenu" ref="998271133"/>
-												<string key="NSTitle">Stop Speaking</string>
+												<string key="NSTitle">Sluta tala</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
 												<reference key="NSOnImage" ref="121411531"/>
@@ -801,19 +801,19 @@
 					</object>
 					<object class="NSMenuItem" id="42027193">
 						<reference key="NSMenu" ref="933560928"/>
-						<string key="NSTitle">Window</string>
+						<string key="NSTitle">Fönster</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="121411531"/>
 						<reference key="NSMixedImage" ref="781528205"/>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="889328885">
-							<string key="NSTitle">Window</string>
+							<string key="NSTitle">Fönster</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="114254214">
 									<reference key="NSMenu" ref="889328885"/>
-									<string key="NSTitle">Minimize</string>
+									<string key="NSTitle">Minimera</string>
 									<string key="NSKeyEquiv">m</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -822,7 +822,7 @@
 								</object>
 								<object class="NSMenuItem" id="522321383">
 									<reference key="NSMenu" ref="889328885"/>
-									<string key="NSTitle">Zoom</string>
+									<string key="NSTitle">Förstora</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
@@ -840,7 +840,7 @@
 								</object>
 								<object class="NSMenuItem" id="258512650">
 									<reference key="NSMenu" ref="889328885"/>
-									<string key="NSTitle">Bring All to Front</string>
+									<string key="NSTitle">Lägg alla fönster framför</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="121411531"/>
@@ -1199,14 +1199,14 @@
 							<reference ref="632803095"/>
 							<reference ref="749241003"/>
 							<reference ref="408590837"/>
-							<reference ref="36997765"/>
-							<reference ref="1028028054"/>
 							<reference ref="860069225"/>
 							<reference ref="122868579"/>
 							<reference ref="125399613"/>
 							<reference ref="676545591"/>
 							<reference ref="595621675"/>
 							<reference ref="256399791"/>
+							<reference ref="36997765"/>
+							<reference ref="1028028054"/>
 							<reference ref="560348105"/>
 						</object>
 						<reference key="parent" ref="1005"/>
@@ -1817,9 +1817,9 @@
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{64, 201}, {452, 359}}</string>
+					<string>{{286, 159}, {551, 359}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{64, 201}, {452, 359}}</string>
+					<string>{{286, 159}, {551, 359}}</string>
 					<boolean value="NO"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -1835,7 +1835,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{256, 384}, {240, 203}}</string>
+					<string>{{256, 384}, {254, 203}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1848,7 +1848,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{496, 314}, {275, 113}}</string>
+					<string>{{510, 314}, {327, 113}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="0"/>
@@ -1859,7 +1859,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{496, 364}, {150, 43}}</string>
+					<string>{{510, 364}, {116, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1927,7 +1927,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{256, 494}, {194, 73}}</string>
+					<string>{{256, 494}, {247, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{525, 802}, {197, 73}}</string>
@@ -1939,7 +1939,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{256, 484}, {203, 123}}</string>
+					<string>{{256, 484}, {221, 123}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{23, 794}, {245, 183}}</string>

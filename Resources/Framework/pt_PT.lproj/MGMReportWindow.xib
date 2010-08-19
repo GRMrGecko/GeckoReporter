@@ -299,7 +299,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="620693080">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">272630784</int>
+								<int key="NSCellFlags2">71304192</int>
 								<string key="NSContents">Data do Relatório:</string>
 								<reference key="NSSupport" ref="935714966"/>
 								<reference key="NSControlView" ref="676545591"/>

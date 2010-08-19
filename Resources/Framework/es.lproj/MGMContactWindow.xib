@@ -147,7 +147,7 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="261832961">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">272630784</int>
+								<int key="NSCellFlags2">71304192</int>
 								<string key="NSContents">Asunto:</string>
 								<reference key="NSSupport" ref="871674610"/>
 								<reference key="NSControlView" ref="451928634"/>
