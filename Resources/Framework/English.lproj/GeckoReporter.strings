@@ -1,38 +1,28 @@
-/* No comment */
-"Hide %@"  = "Hide %@";
+/* GeckoReporter Strings. */
 
-/* No comment */
-"Quit %@"  = "Quit %@";
+/* Menus */
+"Hide %@" = "Hide %@";
+"Quit %@" = "Quit %@";
 
-/* No comment */
-"Sending..."  = "Sending...";
+/* Error messages */
+"Error could not send crash report." = "Error could not send crash report.";
+"Error could not send bug report." = "Error could not send bug report.";
+"Error could not send message." = "Error could not send message.";
 
-/* No comment */
-"%@ Crashed"  = "%@ Crashed";
+/* Incomplete fields message */
+"Fields not filled." = "Fields not filled.";
+"Please be sure all fields are filled as all fields are required." = "Please be sure all fields are filled as all fields are required.";
 
-/* No comment */
-"%@ crashed the last time you ran it.  Would you like to send me a crash report so I can look into it?"  = "%@ crashed the last time you ran it.  Would you like to send me a crash report so I can look into it?";
+/* Status not 200 error */
+"Status Code Returned %d" = "Status Code Returned %d";
 
-/* No comment */
-"%a, %m/%d/%Y %I:%M:%S %p"  = "%a, %m/%d/%Y %I:%M:%S %p";
+/* Buttons */
+"Ok" = "Ok";
+"Sending..." = "Sending...";
 
-/* No comment */
-"Ok"  = "Ok";
+/* Interface */
 
-/* No comment */
-"Error could not send crash report."  = "Error could not send crash report.";
-
-/* No comment */
-"Error could not send bug report."  = "Error could not send bug report.";
-
-/* No comment */
-"Error could not send message."  = "Error could not send message.";
-
-/* No comment */
-"Fields not filled."  = "Fields not filled.";
-
-/* No comment */
-"Please be sure all fields are filled as all fields are required."  = "Please be sure all fields are filled as all fields are required.";
-
-/* No comment */
-"Status Code Returned %d"  = "Status Code Returned %d";
+/* Crash Report */
+"%@ Crashed" = "%@ Crashed";
+"%@ crashed the last time you ran it. Would you like to send me a crash report so I can look into it?" = "%@ crashed the last time you ran it. Would you like to send me a crash report so I can look into it?";
+"%a, %m/%d/%Y %I:%M:%S %p" = "%a, %m/%d/%Y %I:%M:%S %p";

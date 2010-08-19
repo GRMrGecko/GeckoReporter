@@ -44,7 +44,7 @@ NSString * const MGMSaveLastDate = @"MGMSaveLastDate";
 			[hideMenu setTitle:[NSString stringWithFormat:MGMLocalized(@"Hide %@", nil), applicationName]];
 			[quitMenu setTitle:[NSString stringWithFormat:MGMLocalized(@"Quit %@", nil), applicationName]];
 			
-			[titleField setStringValue:[NSString stringWithFormat:MGMLocalized(@"%@ crashed the last time you ran it.  Would you like to send me a crash report so I can look into it?", nil), applicationName]];
+			[titleField setStringValue:[NSString stringWithFormat:MGMLocalized(@"%@ crashed the last time you ran it. Would you like to send me a crash report so I can look into it?", nil), applicationName]];
 			[dateField setStringValue:[reportDate descriptionWithCalendarFormat:MGMLocalized(@"%a, %m/%d/%Y %I:%M:%S %p", nil) timeZone:nil locale:nil]];
 			[mainWindow setTitle:[NSString stringWithFormat:MGMLocalized(@"%@ Crashed", nil), applicationName]];
 			
