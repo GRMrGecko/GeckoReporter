@@ -200,7 +200,7 @@ NSString * const MGMModel = @"hw.model";
 		if (minorVersion==6)
 			return @"Snow Leopard";
 		if (minorVersion==7)
-			return @"Lynx";
+			return @"Lion";
 		if (minorVersion==8)
 			return @"Garfield";
 		if (minorVersion==9)
