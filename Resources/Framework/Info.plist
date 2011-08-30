@@ -1,14 +1,14 @@
 {
 	"CFBundleDevelopmentRegion" = English;
 	CFBundleExecutable = "${EXECUTABLE_NAME}";
-	CFBundleName = "${PRODUCT_NAME}";
 	CFBundleIconFile = "";
 	CFBundleIdentifier = "com.MrGeckosMedia.${PRODUCT_NAME:rfc1034Identifier}";
 	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundleName = "${PRODUCT_NAME}";
 	CFBundlePackageType = FMWK;
+	"CFBundleShortVersionString" = "0.2";
 	CFBundleSignature = "????";
-	"NSHumanReadableCopyright" = "Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
-	CFBundleVersion = "0.1";
-	"CFBundleShortVersionString" = "0.1";
+	CFBundleVersion = "0.2";
+	"NSHumanReadableCopyright" = "Copyright (c) 2011 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
 	NSPrincipalClass = "";
 }

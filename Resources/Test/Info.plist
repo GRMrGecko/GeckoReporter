@@ -6,19 +6,19 @@
 	"CFBundleInfoDictionaryVersion" = "6.0";
 	CFBundleName = "${PRODUCT_NAME}";
 	CFBundlePackageType = APPL;
-	CFBundleSignature = "????";
-	"NSHumanReadableCopyright" = "Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
 	"CFBundleShortVersionString" = "0.1";
+	CFBundleSignature = "????";
 	CFBundleVersion = "0.1";
 	"LSMinimumSystemVersion" = "${MACOSX_DEPLOYMENT_TARGET}";
-	NSPrincipalClass = NSApplication;
-	NSMainNibFile = MainMenu;
-	MGMGRCrashEmail = "crashreports@mrgeckosmedia.com";
 	MGMGRBugsEmail = "bugs@mrgeckosmedia.com";
 	MGMGRContactEmail = "support@mrgeckosmedia.com";
+	MGMGRCrashEmail = "crashreports@mrgeckosmedia.com";
 	MGMGRLogFiles = "~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}.log ~/Library/Logs/com.MrGeckosMedia.${PRODUCT_NAME:rfc1034identifier}_2.log";
 	"MGMGRReportFileAttached" = YES;
-	MGMGRTimeFormat = "%A, %m/%d/%y %I:%M:%S %p";
+	MGMGRTimeFormat = "EEEE, MM/dd/yy h:mm:ss a";
 	MGMGRTimeZone = CST;
 	MGMGRURL = "http://mrgeckosmedia.com/sendreport.php";
+	"NSHumanReadableCopyright" = "Copyright (c) 2011 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
+	NSMainNibFile = MainMenu;
+	NSPrincipalClass = NSApplication;
 }

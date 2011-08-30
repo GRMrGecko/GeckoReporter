@@ -3,7 +3,18 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/27/09.
-//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2011 Mr. Gecko's Media (James Coleman). http://mrgeckosmedia.com/
+//
+//  Permission to use, copy, modify, and/or distribute this software for any purpose
+//  with or without fee is hereby granted, provided that the above copyright notice
+//  and this permission notice appear in all copies.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+//  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+//  FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT,
+//  OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+//  DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+//  ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
 #import "MGMReporter.h"
@@ -12,7 +23,7 @@
 #import "MGMSystemInfo.h"
 #import "MGMLog.h"
 
-NSString * const MGMCopyright = @"Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
+NSString * const MGMCopyright = @"Copyright (c) 2011 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
 
 NSString * const MGMReportsPath = @"~/Library/Logs/CrashReporter";
 NSString * const MGMGRDoneNotification = @"MGMGRDoneNotification";
@@ -27,32 +38,26 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
     return [[self alloc] init];
 }
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		foundReport = NO;
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(done:) name:MGMGRDoneNotification object:nil];
 		NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 		if ([userDefaults objectForKey:MGMGRIgnoreAll]==nil || ![[userDefaults objectForKey:MGMGRIgnoreAll] boolValue]) {
 			NSFileManager *manager = [NSFileManager defaultManager];
 			NSString *applicationName = [[MGMSystemInfo info] applicationEXECName];
-			if (lastDate!=nil) {
-				[lastDate release];
-				lastDate = nil;
-			}
+			[lastDate release];
 			lastDate = [[userDefaults objectForKey:MGMGRLastCrashDate] retain];
 			NSDirectoryEnumerator *crashFiles = [manager enumeratorAtPath:[MGMReportsPath stringByExpandingTildeInPath]];
 			NSString *crashFile = nil;
 			NSString *lastCrashFile = nil;
-			while (crashFile = [crashFiles nextObject]) {
+			while ((crashFile = [crashFiles nextObject])) {
 				if ([crashFile hasPrefix:applicationName]) {
 					NSString *file = [[MGMReportsPath stringByAppendingPathComponent:crashFile] stringByResolvingSymlinksInPath];
 					BOOL readable = [manager isReadableFileAtPath:file];
 					NSDictionary *attributes = [crashFiles fileAttributes];
 					NSDate *modifiedDate = [attributes objectForKey:NSFileModificationDate];
 					if (readable && (lastDate==nil || (![lastDate isEqual:modifiedDate] && [lastDate laterDate:modifiedDate]==modifiedDate))) {
-						if (lastDate!=nil) {
-							[lastDate release];
-							lastDate = nil;
-						}
+						[lastDate release];
 						lastDate = [modifiedDate retain];
 						lastCrashFile = file;
 						foundReport = YES;
@@ -83,10 +88,9 @@ NSString * const MGMGRIgnoreAll = @"MGMGRIgnoreAll";
 #if MGMGRReleaseDebug
 	MGMLog(@"%s Releasing", __PRETTY_FUNCTION__);
 #endif
-	if (lastDate!=nil)
-		[lastDate release];
-	if (mailSender!=nil)
-		[mailSender release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	[lastDate release];
+	[mailSender release];
 	[super dealloc];
 }
 - (void)done:(NSNotification *)note {

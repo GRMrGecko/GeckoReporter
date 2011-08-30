@@ -3,7 +3,18 @@
 //  GeckoReporter
 //
 //  Created by Mr. Gecko on 12/28/09.
-//  Copyright (c) 2010 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/
+//  Copyright (c) 2011 Mr. Gecko's Media (James Coleman). http://mrgeckosmedia.com/
+//
+//  Permission to use, copy, modify, and/or distribute this software for any purpose
+//  with or without fee is hereby granted, provided that the above copyright notice
+//  and this permission notice appear in all copies.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+//  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+//  FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT,
+//  OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+//  DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+//  ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
 #import "MGMSender.h"
@@ -28,6 +39,9 @@ NSString * const MGMGRContactEmail = @"MGMGRContactEmail";
 NSString * const MGMGRURL = @"MGMGRURL";
 NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 
+NSString * const MGMGRFPath = @"path";
+NSString * const MGMGRFName = @"name";
+
 @interface MGMSender (MGMPrivate)
 - (NSData *)buildBodyWithObjects:(NSDictionary *)theObjects boundary:(NSString *)theBoundary;
 - (NSDictionary *)defaultObjects;
@@ -38,10 +52,8 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 #if MGMGRReleaseDebug
 	MGMLog(@"%s Releasing", __PRETTY_FUNCTION__);
 #endif
-	if (theConnection!=nil)
-		[theConnection release];
-	if (receivedData!=nil)
-		[receivedData release];
+	[theConnection release];
+	[receivedData release];
 	[super dealloc];
 }
 
@@ -83,25 +95,34 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 			[data appendData:object];
 		} else if ([object isKindOfClass:[NSDate class]]) {
 			[data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key] dataUsingEncoding:NSUTF8StringEncoding]];
-			NSString *date;
+			NSDateFormatter *dateFormatter = [NSDateFormatter new];
+			[dateFormatter setDateFormat:timeFormat];
 			if ([timeZone length]==3) {
-				date = [object descriptionWithCalendarFormat:timeFormat timeZone:[NSTimeZone timeZoneWithAbbreviation:timeZone] locale:nil];
+				[dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:timeZone]];
 			} else {
-				date = [object descriptionWithCalendarFormat:timeFormat timeZone:[NSTimeZone timeZoneWithName:timeZone] locale:nil];
+				[dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:timeZone]];
 			}
+			NSString *date = [dateFormatter stringFromDate:object];
+			[dateFormatter release];
 			[data appendData:[date dataUsingEncoding:NSUTF8StringEncoding]];
 		} else if ([object isKindOfClass:[NSURL class]]) {
-			if ([object isFileURL]) {
-				NSString *objectPath = [object path];
-				if ([manager fileExistsAtPath:objectPath] && [manager isReadableFileAtPath:objectPath]) {
-					[data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", key, [objectPath lastPathComponent]] dataUsingEncoding:NSUTF8StringEncoding]];
-					[data appendData:[@"Content-Type: plain/text\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
-					[data appendData:[@"Content-Transfer-Encoding: binary\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
-					[data appendData:[NSData dataWithContentsOfFile:objectPath]];
+			[data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key] dataUsingEncoding:NSUTF8StringEncoding]];
+			[data appendData:[[object absoluteString] dataUsingEncoding:NSUTF8StringEncoding]];
+		} else if ([object isKindOfClass:[NSDictionary class]]) {
+			if ([manager fileExistsAtPath:[object objectForKey:MGMGRFPath]] && [manager isReadableFileAtPath:[object objectForKey:MGMGRFPath]]) {
+				[data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", key, [object objectForKey:MGMGRFName]] dataUsingEncoding:NSUTF8StringEncoding]];
+				NSString *mimeString = @"application/octet-stream";
+				CFStringRef extentionInfo = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (CFStringRef)[[object objectForKey:MGMGRFPath] pathExtension], CFSTR("public.data"));
+				if (extentionInfo!=NULL) {
+					CFStringRef mime = UTTypeCopyPreferredTagWithClass(extentionInfo, kUTTagClassMIMEType);
+					CFRelease(extentionInfo);
+					if (mime!=NULL) {
+						mimeString = [(NSString *)mime autorelease];
+					}
 				}
-			} else {
-				[data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", key] dataUsingEncoding:NSUTF8StringEncoding]];
-				[data appendData:[[object absoluteString] dataUsingEncoding:NSUTF8StringEncoding]];
+				[data appendData:[[NSString stringWithFormat:@"Content-Type: %@\r\n", mimeString] dataUsingEncoding:NSUTF8StringEncoding]];
+				[data appendData:[@"Content-Transfer-Encoding: binary\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+				[data appendData:[NSData dataWithContentsOfFile:[object objectForKey:MGMGRFPath]]];
 			}
 		}
 		[data appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
@@ -149,8 +170,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	return objects;
 }
 - (void)sendReport:(NSString *)theReportPath reportDate:(NSDate *)theReportDate userReport:(NSString *)theUserReport delegate:(id)theDelegate {
-	if (theDelegate!=nil)
-		delegate = theDelegate;
+	delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 	MGMSystemInfo *sysInfo = [MGMSystemInfo info];
@@ -214,11 +234,12 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	if (theReportDate!=nil)
 		[objects setObject:theReportDate forKey:@"Crash Report Date"];
 	if (theReportPath!=nil && ![theReportPath isEqualToString:@""])
-		[objects setObject:[NSURL fileURLWithPath:theReportPath] forKey:@"reportFile"];
+		[objects setObject:[NSDictionary dictionaryWithObjectsAndKeys:theReportPath, MGMGRFPath, [NSString stringWithFormat:@"%@.crash", [[MGMSystemInfo info] applicationName]], MGMGRFName, nil] forKey:@"reportFile"];
 	if (logFiles!=nil && ![logFiles isEqualToString:@""]) {
 		NSArray *logs = [logFiles componentsSeparatedByString:@" "];
 		for (int i=0; i<[logs count]; i++) {
-			[objects setObject:[NSURL fileURLWithPath:[[logs objectAtIndex:i] stringByExpandingTildeInPath]] forKey:[NSString stringWithFormat:@"logFile%d", i]];
+			NSString *file = [[logs objectAtIndex:i] stringByExpandingTildeInPath];
+			[objects setObject:[NSDictionary dictionaryWithObjectsAndKeys:file, MGMGRFPath, [file lastPathComponent], MGMGRFName, nil] forKey:[NSString stringWithFormat:@"logFile%d", i]];
 		}
 	}
 	[postRequest setHTTPBody:[self buildBodyWithObjects:objects boundary:boundary]];
@@ -229,8 +250,7 @@ NSString * const MGMGRLogFiles = @"MGMGRLogFiles";
 	}
 }
 - (void)sendBug:(NSString *)theBug reproduce:(NSString *)theReproduce delegate:(id)theDelegate {
-	if (theDelegate!=nil)
-		delegate = theDelegate;
+	delegate = theDelegate;
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 	MGMSystemInfo *sysInfo = [MGMSystemInfo info];

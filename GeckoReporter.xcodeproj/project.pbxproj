@@ -6,6 +6,20 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2AC4C0911301DC8A00712FB7 /* Build Directory */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AC4C0921301DC8A00712FB7 /* Build configuration list for PBXAggregateTarget "Build Directory" */;
+			buildPhases = (
+				2AC4C0951301DC9100712FB7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Directory";
+			productName = "Build Directory";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2A85014410EFA6A700CA1273 /* MGMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A85014210EFA6A700CA1273 /* MGMFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A85014510EFA6A700CA1273 /* MGMFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A85014310EFA6A700CA1273 /* MGMFeedback.m */; };
@@ -14,14 +28,17 @@
 		2A8502FD10F0636600CA1273 /* MGMSenderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8502FC10F0636600CA1273 /* MGMSenderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AB2902A10F132290080C6A1 /* MGMContactWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2902810F132290080C6A1 /* MGMContactWindow.h */; settings = {ATTRIBUTES = (); }; };
 		2AB2902B10F132290080C6A1 /* MGMContactWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2902910F132290080C6A1 /* MGMContactWindow.m */; };
-		2AB297AF10F51A070080C6A1 /* GeckoReporter.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2AB297A510F5173F0080C6A1 /* GeckoReporter.icns */; };
-		2AB2984610F54BA00080C6A1 /* GeckoReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983110F54BA00080C6A1 /* GeckoReporter.strings */; };
-		2AB2984910F54BA00080C6A1 /* MGMBugWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983710F54BA00080C6A1 /* MGMBugWindow.xib */; };
-		2AB2984A10F54BA00080C6A1 /* MGMContactWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983910F54BA00080C6A1 /* MGMContactWindow.xib */; };
-		2AB2984B10F54BA00080C6A1 /* MGMReportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2983B10F54BA00080C6A1 /* MGMReportWindow.xib */; };
-		2AB2984C10F54BA00080C6A1 /* ModelNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2984110F54BA00080C6A1 /* ModelNames.plist */; };
 		2AB2985D10F54D490080C6A1 /* MGMLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB2985C10F54D490080C6A1 /* MGMLocalized.h */; settings = {ATTRIBUTES = (); }; };
-		2AB2987F10F5537D0080C6A1 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2987E10F5537D0080C6A1 /* License.txt */; };
+		2AC4C0901301DB5900712FB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C08F1301DB5900712FB7 /* main.m */; };
+		2AC4C0B51301DDBD00712FB7 /* GeckoReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C09B1301DDBD00712FB7 /* GeckoReporter.strings */; };
+		2AC4C0B61301DDBD00712FB7 /* MGMBugWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C09D1301DDBD00712FB7 /* MGMBugWindow.xib */; };
+		2AC4C0B71301DDBD00712FB7 /* MGMContactWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C09F1301DDBD00712FB7 /* MGMContactWindow.xib */; };
+		2AC4C0B81301DDBD00712FB7 /* MGMReportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0A11301DDBD00712FB7 /* MGMReportWindow.xib */; };
+		2AC4C0BA1301DDBD00712FB7 /* ModelNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0AC1301DDBD00712FB7 /* ModelNames.plist */; };
+		2AC4C0CB1301E16F00712FB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0C41301E16F00712FB7 /* InfoPlist.strings */; };
+		2AC4C0CC1301E16F00712FB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0C61301E16F00712FB7 /* MainMenu.xib */; };
+		2AC4C0CF1301E1A900712FB7 /* GeckoReporter.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0CE1301E1A900712FB7 /* GeckoReporter.icns */; };
+		2AC4C0D11301E1B200712FB7 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C0D01301E1B200712FB7 /* License.txt */; };
 		2AC8695410EE8062000743D2 /* GeckoReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694A10EE8062000743D2 /* GeckoReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695510EE8062000743D2 /* MGMReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694B10EE8062000743D2 /* MGMReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695610EE8062000743D2 /* MGMReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8694C10EE8062000743D2 /* MGMReporter.m */; };
@@ -30,14 +47,10 @@
 		2AC8695910EE8062000743D2 /* MGMSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8694F10EE8062000743D2 /* MGMSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695B10EE8062000743D2 /* MGMSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC8695110EE8062000743D2 /* MGMSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC8695C10EE8062000743D2 /* MGMSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8695210EE8062000743D2 /* MGMSystemInfo.m */; };
-		2AC869B410EE839E000743D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC869B310EE839E000743D2 /* MainMenu.xib */; };
-		2AC86A0F10EE8C1F000743D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AC869AC10EE82B3000743D2 /* InfoPlist.strings */; };
-		2AC86A1010EE8C1F000743D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC869B310EE839E000743D2 /* MainMenu.xib */; };
 		2AC86A1210EE8C2B000743D2 /* MGMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC869B610EE83C3000743D2 /* MGMController.m */; };
 		2AC86A7410EE901F000743D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		2AC86A7510EE902E000743D2 /* GeckoReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* GeckoReporter.framework */; };
 		2AC86A7810EE9053000743D2 /* GeckoReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* GeckoReporter.framework */; };
-		2AC86A9D10EE9149000743D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86A9C10EE9149000743D2 /* main.m */; };
 		2AC86B4710EE9DD7000743D2 /* MGMLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC86B4510EE9DD7000743D2 /* MGMLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC86B4810EE9DD7000743D2 /* MGMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86B4610EE9DD7000743D2 /* MGMLog.m */; };
 		2AC86CF110EEC54C000743D2 /* MGMSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86CF010EEC54C000743D2 /* MGMSender.m */; };
@@ -45,6 +58,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2AC4C0961301DCB400712FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC4C0911301DC8A00712FB7;
+			remoteInfo = "Build Directory";
+		};
+		2AC4C0981301DCB900712FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC4C0911301DC8A00712FB7;
+			remoteInfo = "Build Directory";
+		};
 		2AC86A7610EE9049000743D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -77,36 +104,41 @@
 		2A85014710EFA81C00CA1273 /* MGMBugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMBugWindow.h; sourceTree = "<group>"; };
 		2A85014810EFA81C00CA1273 /* MGMBugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMBugWindow.m; sourceTree = "<group>"; };
 		2A8502FC10F0636600CA1273 /* MGMSenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMSenderDelegate.h; sourceTree = "<group>"; };
-		2A9EC75B121DAD3100DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
-		2A9EC75C121DAD6900DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = se.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
-		2A9EC769121DB05F00DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
-		2A9EC76B121DB11100DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
-		2A9EC770121DB1D000DDE277 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
-		2A9EC775121DB3FC00DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
-		2A9EC778121DB4B700DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
-		2A9EC77A121DB52200DDE277 /* se */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = se; path = se.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
 		2AB2902810F132290080C6A1 /* MGMContactWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMContactWindow.h; sourceTree = "<group>"; };
 		2AB2902910F132290080C6A1 /* MGMContactWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMContactWindow.m; sourceTree = "<group>"; };
-		2AB2922C10F17A950080C6A1 /* GeckoReporter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeckoReporter-Info.plist"; sourceTree = SOURCE_ROOT; };
-		2AB2927710F184CC0080C6A1 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt_PT; path = pt_PT.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2AB2977210F50BB80080C6A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2AB297A510F5173F0080C6A1 /* GeckoReporter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GeckoReporter.icns; sourceTree = SOURCE_ROOT; };
-		2AB2983210F54BA00080C6A1 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
-		2AB2983810F54BA00080C6A1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
-		2AB2983A10F54BA00080C6A1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
-		2AB2983C10F54BA00080C6A1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
-		2AB2983E10F54BA00080C6A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
-		2AB2983F10F54BA00080C6A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
-		2AB2984010F54BA00080C6A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
-		2AB2984110F54BA00080C6A1 /* ModelNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ModelNames.plist; sourceTree = "<group>"; };
-		2AB2984310F54BA00080C6A1 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt_PT; path = pt_PT.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
-		2AB2984410F54BA00080C6A1 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt_PT; path = pt_PT.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
-		2AB2984510F54BA00080C6A1 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt_PT; path = pt_PT.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
-		2AB2984D10F54BB40080C6A1 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
-		2AB2985110F54C1E0080C6A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
 		2AB2985C10F54D490080C6A1 /* MGMLocalized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMLocalized.h; sourceTree = "<group>"; };
-		2AB2987E10F5537D0080C6A1 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = SOURCE_ROOT; };
-		2AC8693C10EE7EDE000743D2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		2AC4C08D1301DB4600712FB7 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = prefix.pch; path = Classes/Framework/prefix.pch; sourceTree = "<group>"; };
+		2AC4C08E1301DB5100712FB7 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = prefix.pch; path = Classes/Test/prefix.pch; sourceTree = "<group>"; };
+		2AC4C08F1301DB5900712FB7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/Test/main.m; sourceTree = "<group>"; };
+		2AC4C09C1301DDBD00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2AC4C09E1301DDBD00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A01301DDBD00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A21301DDBD00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A31301DDBD00712FB7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2AC4C0A41301DDBD00712FB7 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A51301DDBD00712FB7 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A61301DDBD00712FB7 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A71301DDBD00712FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2AC4C0A81301DDBD00712FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2AC4C0A91301DDBD00712FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2AC4C0AA1301DDBD00712FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
+		2AC4C0AC1301DDBD00712FB7 /* ModelNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ModelNames.plist; sourceTree = "<group>"; };
+		2AC4C0AD1301DDBD00712FB7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/GeckoReporter.strings"; sourceTree = "<group>"; };
+		2AC4C0AE1301DDBD00712FB7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-PT"; path = "pt-PT.lproj/MGMBugWindow.xib"; sourceTree = "<group>"; };
+		2AC4C0AF1301DDBD00712FB7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-PT"; path = "pt-PT.lproj/MGMContactWindow.xib"; sourceTree = "<group>"; };
+		2AC4C0B01301DDBD00712FB7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-PT"; path = "pt-PT.lproj/MGMReportWindow.xib"; sourceTree = "<group>"; };
+		2AC4C0B11301DDBD00712FB7 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/GeckoReporter.strings; sourceTree = "<group>"; };
+		2AC4C0B21301DDBD00712FB7 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MGMBugWindow.xib; sourceTree = "<group>"; };
+		2AC4C0B31301DDBD00712FB7 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MGMContactWindow.xib; sourceTree = "<group>"; };
+		2AC4C0B41301DDBD00712FB7 /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = sv; path = sv.lproj/MGMReportWindow.xib; sourceTree = "<group>"; };
+		2AC4C0BB1301DDD100712FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2AC4C0C51301E16F00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2AC4C0C71301E16F00712FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2AC4C0C81301E16F00712FB7 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2AC4C0C91301E16F00712FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2AC4C0CA1301E16F00712FB7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-PT"; path = "pt-PT.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		2AC4C0CE1301E1A900712FB7 /* GeckoReporter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GeckoReporter.icns; sourceTree = SOURCE_ROOT; };
+		2AC4C0D01301E1B200712FB7 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = SOURCE_ROOT; };
 		2AC8694A10EE8062000743D2 /* GeckoReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeckoReporter.h; sourceTree = "<group>"; };
 		2AC8694B10EE8062000743D2 /* MGMReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMReporter.h; sourceTree = "<group>"; };
 		2AC8694C10EE8062000743D2 /* MGMReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMReporter.m; sourceTree = "<group>"; };
@@ -115,13 +147,9 @@
 		2AC8694F10EE8062000743D2 /* MGMSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMSender.h; sourceTree = "<group>"; };
 		2AC8695110EE8062000743D2 /* MGMSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMSystemInfo.h; sourceTree = "<group>"; };
 		2AC8695210EE8062000743D2 /* MGMSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMSystemInfo.m; sourceTree = "<group>"; };
-		2AC869AD10EE82B3000743D2 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2AC869AF10EE82CF000743D2 /* GeckoReporter Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeckoReporter Test-Info.plist"; sourceTree = SOURCE_ROOT; };
-		2AC869B010EE82F1000743D2 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2AC869B510EE83C3000743D2 /* MGMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMController.h; sourceTree = "<group>"; };
 		2AC869B610EE83C3000743D2 /* MGMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMController.m; sourceTree = "<group>"; };
 		2AC86A0B10EE8C12000743D2 /* GeckoReporter Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeckoReporter Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC86A9C10EE9149000743D2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AC86B4510EE9DD7000743D2 /* MGMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMLog.h; sourceTree = "<group>"; };
 		2AC86B4610EE9DD7000743D2 /* MGMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMLog.m; sourceTree = "<group>"; };
 		2AC86CF010EEC54C000743D2 /* MGMSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMSender.m; sourceTree = "<group>"; };
@@ -198,18 +226,46 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		2AB2983010F54BA00080C6A1 /* Framework */ = {
+		2AC4C08B1301DB2B00712FB7 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				2AB2987E10F5537D0080C6A1 /* License.txt */,
-				2AB2922C10F17A950080C6A1 /* GeckoReporter-Info.plist */,
-				2AB2983110F54BA00080C6A1 /* GeckoReporter.strings */,
-				2AB2983710F54BA00080C6A1 /* MGMBugWindow.xib */,
-				2AB2983910F54BA00080C6A1 /* MGMContactWindow.xib */,
-				2AB2983B10F54BA00080C6A1 /* MGMReportWindow.xib */,
-				2AB2984110F54BA00080C6A1 /* ModelNames.plist */,
+				2AC4C08F1301DB5900712FB7 /* main.m */,
+				2AC4C08E1301DB5100712FB7 /* prefix.pch */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		2AC4C08C1301DB3400712FB7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4C08D1301DB4600712FB7 /* prefix.pch */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		2AC4C09A1301DDBD00712FB7 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4C09B1301DDBD00712FB7 /* GeckoReporter.strings */,
+				2AC4C09D1301DDBD00712FB7 /* MGMBugWindow.xib */,
+				2AC4C09F1301DDBD00712FB7 /* MGMContactWindow.xib */,
+				2AC4C0A11301DDBD00712FB7 /* MGMReportWindow.xib */,
+				2AC4C0BB1301DDD100712FB7 /* Info.plist */,
+				2AC4C0AC1301DDBD00712FB7 /* ModelNames.plist */,
+				2AC4C0D01301E1B200712FB7 /* License.txt */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		2AC4C0C31301E16E00712FB7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4C0C41301E16F00712FB7 /* InfoPlist.strings */,
+				2AC4C0C61301E16F00712FB7 /* MainMenu.xib */,
+				2AC4C0C91301E16F00712FB7 /* Info.plist */,
+				2AC4C0CE1301E1A900712FB7 /* GeckoReporter.icns */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		2AC8694810EE8062000743D2 /* Classes */ = {
@@ -259,28 +315,17 @@
 		2AC8695D10EE808D000743D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2AB2983010F54BA00080C6A1 /* Framework */,
-				2AC869AB10EE82B3000743D2 /* Test */,
+				2AC4C09A1301DDBD00712FB7 /* Framework */,
+				2AC4C0C31301E16E00712FB7 /* Test */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		2AC869AB10EE82B3000743D2 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				2AB297A510F5173F0080C6A1 /* GeckoReporter.icns */,
-				2AC869AF10EE82CF000743D2 /* GeckoReporter Test-Info.plist */,
-				2AC869AC10EE82B3000743D2 /* InfoPlist.strings */,
-				2AC869B310EE839E000743D2 /* MainMenu.xib */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2AC8693C10EE7EDE000743D2 /* Prefix.pch */,
-				2AC86A9C10EE9149000743D2 /* main.m */,
+				2AC4C08C1301DB3400712FB7 /* Framework */,
+				2AC4C08B1301DB2B00712FB7 /* Test */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -321,6 +366,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AC4C0991301DCB900712FB7 /* PBXTargetDependency */,
 				2AC86A7710EE9049000743D2 /* PBXTargetDependency */,
 			);
 			name = "GeckoReporter Test";
@@ -340,6 +386,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2AC4C0971301DCB400712FB7 /* PBXTargetDependency */,
 			);
 			name = GeckoReporter;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -354,6 +401,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "GeckoReporter" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -364,6 +412,7 @@
 				pt_PT,
 				es,
 				se,
+				sv,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* GeckoReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -372,6 +421,7 @@
 			targets = (
 				8DC2EF4F0486A6940098B216 /* GeckoReporter */,
 				2AC86A0A10EE8C12000743D2 /* GeckoReporter Test */,
+				2AC4C0911301DC8A00712FB7 /* Build Directory */,
 			);
 		};
 /* End PBXProject section */
@@ -381,9 +431,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB297AF10F51A070080C6A1 /* GeckoReporter.icns in Resources */,
-				2AC86A0F10EE8C1F000743D2 /* InfoPlist.strings in Resources */,
-				2AC86A1010EE8C1F000743D2 /* MainMenu.xib in Resources */,
+				2AC4C0CB1301E16F00712FB7 /* InfoPlist.strings in Resources */,
+				2AC4C0CC1301E16F00712FB7 /* MainMenu.xib in Resources */,
+				2AC4C0CF1301E1A900712FB7 /* GeckoReporter.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,25 +441,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC869B410EE839E000743D2 /* MainMenu.xib in Resources */,
-				2AB2984610F54BA00080C6A1 /* GeckoReporter.strings in Resources */,
-				2AB2984910F54BA00080C6A1 /* MGMBugWindow.xib in Resources */,
-				2AB2984A10F54BA00080C6A1 /* MGMContactWindow.xib in Resources */,
-				2AB2984B10F54BA00080C6A1 /* MGMReportWindow.xib in Resources */,
-				2AB2984C10F54BA00080C6A1 /* ModelNames.plist in Resources */,
-				2AB2987F10F5537D0080C6A1 /* License.txt in Resources */,
+				2AC4C0B51301DDBD00712FB7 /* GeckoReporter.strings in Resources */,
+				2AC4C0B61301DDBD00712FB7 /* MGMBugWindow.xib in Resources */,
+				2AC4C0B71301DDBD00712FB7 /* MGMContactWindow.xib in Resources */,
+				2AC4C0B81301DDBD00712FB7 /* MGMReportWindow.xib in Resources */,
+				2AC4C0BA1301DDBD00712FB7 /* ModelNames.plist in Resources */,
+				2AC4C0D11301E1B200712FB7 /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AC4C0951301DC9100712FB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$SRCROOT/build\" != \"$SYMROOT\" ]; then\n\tif [ -d \"$SRCROOT/build\" ]; then\n\t\t/bin/rm -Rf \"$SRCROOT/build\"\n\tfi\n\t/bin/ln -fs \"$SYMROOT\" \"$SRCROOT/build\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AC86A0810EE8C12000743D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC86A9D10EE9149000743D2 /* main.m in Sources */,
 				2AC86A1210EE8C2B000743D2 /* MGMController.m in Sources */,
+				2AC4C0901301DB5900712FB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +496,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2AC4C0971301DCB400712FB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC4C0911301DC8A00712FB7 /* Build Directory */;
+			targetProxy = 2AC4C0961301DCB400712FB7 /* PBXContainerItemProxy */;
+		};
+		2AC4C0991301DCB900712FB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC4C0911301DC8A00712FB7 /* Build Directory */;
+			targetProxy = 2AC4C0981301DCB900712FB7 /* PBXContainerItemProxy */;
+		};
 		2AC86A7710EE9049000743D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* GeckoReporter */;
@@ -439,68 +514,68 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2AB2983110F54BA00080C6A1 /* GeckoReporter.strings */ = {
+		2AC4C09B1301DDBD00712FB7 /* GeckoReporter.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AB2983210F54BA00080C6A1 /* English */,
-				2AB2984D10F54BB40080C6A1 /* pt_PT */,
-				2AB2985110F54C1E0080C6A1 /* es */,
-				2A9EC75B121DAD3100DDE277 /* French */,
-				2A9EC75C121DAD6900DDE277 /* se */,
+				2AC4C09C1301DDBD00712FB7 /* English */,
+				2AC4C0A31301DDBD00712FB7 /* es */,
+				2AC4C0A71301DDBD00712FB7 /* French */,
+				2AC4C0AD1301DDBD00712FB7 /* pt-PT */,
+				2AC4C0B11301DDBD00712FB7 /* sv */,
 			);
 			name = GeckoReporter.strings;
 			sourceTree = "<group>";
 		};
-		2AB2983710F54BA00080C6A1 /* MGMBugWindow.xib */ = {
+		2AC4C09D1301DDBD00712FB7 /* MGMBugWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AB2983810F54BA00080C6A1 /* English */,
-				2AB2983E10F54BA00080C6A1 /* es */,
-				2AB2984310F54BA00080C6A1 /* pt_PT */,
-				2A9EC769121DB05F00DDE277 /* French */,
-				2A9EC775121DB3FC00DDE277 /* se */,
+				2AC4C09E1301DDBD00712FB7 /* English */,
+				2AC4C0A41301DDBD00712FB7 /* es */,
+				2AC4C0A81301DDBD00712FB7 /* French */,
+				2AC4C0AE1301DDBD00712FB7 /* pt-PT */,
+				2AC4C0B21301DDBD00712FB7 /* sv */,
 			);
 			name = MGMBugWindow.xib;
 			sourceTree = "<group>";
 		};
-		2AB2983910F54BA00080C6A1 /* MGMContactWindow.xib */ = {
+		2AC4C09F1301DDBD00712FB7 /* MGMContactWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AB2983A10F54BA00080C6A1 /* English */,
-				2AB2983F10F54BA00080C6A1 /* es */,
-				2AB2984410F54BA00080C6A1 /* pt_PT */,
-				2A9EC76B121DB11100DDE277 /* French */,
-				2A9EC778121DB4B700DDE277 /* se */,
+				2AC4C0A01301DDBD00712FB7 /* English */,
+				2AC4C0A51301DDBD00712FB7 /* es */,
+				2AC4C0A91301DDBD00712FB7 /* French */,
+				2AC4C0AF1301DDBD00712FB7 /* pt-PT */,
+				2AC4C0B31301DDBD00712FB7 /* sv */,
 			);
 			name = MGMContactWindow.xib;
 			sourceTree = "<group>";
 		};
-		2AB2983B10F54BA00080C6A1 /* MGMReportWindow.xib */ = {
+		2AC4C0A11301DDBD00712FB7 /* MGMReportWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AB2983C10F54BA00080C6A1 /* English */,
-				2AB2984010F54BA00080C6A1 /* es */,
-				2AB2984510F54BA00080C6A1 /* pt_PT */,
-				2A9EC770121DB1D000DDE277 /* French */,
-				2A9EC77A121DB52200DDE277 /* se */,
+				2AC4C0A21301DDBD00712FB7 /* English */,
+				2AC4C0A61301DDBD00712FB7 /* es */,
+				2AC4C0AA1301DDBD00712FB7 /* French */,
+				2AC4C0B01301DDBD00712FB7 /* pt-PT */,
+				2AC4C0B41301DDBD00712FB7 /* sv */,
 			);
 			name = MGMReportWindow.xib;
 			sourceTree = "<group>";
 		};
-		2AC869AC10EE82B3000743D2 /* InfoPlist.strings */ = {
+		2AC4C0C41301E16F00712FB7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AC869AD10EE82B3000743D2 /* English */,
+				2AC4C0C51301E16F00712FB7 /* English */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2AC869B310EE839E000743D2 /* MainMenu.xib */ = {
+		2AC4C0C61301E16F00712FB7 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AC869B010EE82F1000743D2 /* English */,
-				2AB2927710F184CC0080C6A1 /* pt_PT */,
-				2AB2977210F50BB80080C6A1 /* es */,
+				2AC4C0C71301E16F00712FB7 /* English */,
+				2AC4C0C81301E16F00712FB7 /* es */,
+				2AC4C0CA1301E16F00712FB7 /* pt-PT */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -521,8 +596,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.pch;
-				INFOPLIST_FILE = "GeckoReporter-Info.plist";
+				GCC_PREFIX_HEADER = Classes/Framework/prefix.pch;
+				INFOPLIST_FILE = Resources/Framework/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = GeckoReporter;
 				SKIP_INSTALL = YES;
@@ -540,8 +615,8 @@
 				FRAMEWORK_VERSION = A;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.pch;
-				INFOPLIST_FILE = "GeckoReporter-Info.plist";
+				GCC_PREFIX_HEADER = Classes/Framework/prefix.pch;
+				INFOPLIST_FILE = Resources/Framework/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = GeckoReporter;
 				SKIP_INSTALL = YES;
@@ -559,13 +634,15 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "ppc i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -578,13 +655,28 @@
 					x86_64,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "ppc i386 x86_64";
+			};
+			name = Release;
+		};
+		2AC4C0931301DC8A00712FB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AC4C0941301DC8A00712FB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -598,8 +690,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.pch;
-				INFOPLIST_FILE = "GeckoReporter Test-Info.plist";
+				GCC_PREFIX_HEADER = Classes/Test/prefix.pch;
+				INFOPLIST_FILE = Resources/Test/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -621,8 +713,8 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.pch;
-				INFOPLIST_FILE = "GeckoReporter Test-Info.plist";
+				GCC_PREFIX_HEADER = Classes/Test/prefix.pch;
+				INFOPLIST_FILE = Resources/Test/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -653,6 +745,15 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC4C0921301DC8A00712FB7 /* Build configuration list for PBXAggregateTarget "Build Directory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC4C0931301DC8A00712FB7 /* Debug */,
+				2AC4C0941301DC8A00712FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
