@@ -44,6 +44,8 @@
 - (BOOL)isAfterTiger;
 - (BOOL)isAfterLeopard;
 - (BOOL)isAfterSnowLeopard;
+- (BOOL)isAfterLion;
+- (BOOL)isAfterMountainLion;
 - (NSString *)language;
 - (NSString *)applicationIdentifier;
 - (NSString *)applicationName;

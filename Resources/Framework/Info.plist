@@ -8,7 +8,7 @@
 	CFBundlePackageType = FMWK;
 	"CFBundleShortVersionString" = "0.2";
 	CFBundleSignature = "????";
-	CFBundleVersion = "0.2";
+	CFBundleVersion = "0.2.1";
 	"NSHumanReadableCopyright" = "Copyright (c) 2011 Mr. Gecko's Media (James Coleman). All rights reserved. http://mrgeckosmedia.com/";
 	NSPrincipalClass = "";
 }

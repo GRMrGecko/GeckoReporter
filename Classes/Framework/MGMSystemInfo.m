@@ -213,10 +213,12 @@ NSString * const MGMModel = @"hw.model";
 		if (minorVersion==7)
 			return @"Lion";
 		if (minorVersion==8)
-			return @"Lynx";
+			return @"Mountain Lion";
 		if (minorVersion==9)
-			return @"Garfield";
+			return @"Lynx";
 		if (minorVersion==10)
+			return @"Garfield";
+		if (minorVersion==11)
 			return @"Liger";
 	}
 	return @"Unknown";
@@ -274,6 +276,22 @@ NSString * const MGMModel = @"hw.model";
 	if ([self OSMajorVersion]==10) {
 		int minorVersion = [self OSMinorVersion];
 		return (minorVersion>=6);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterLion {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion>=7);
+	}
+	return NO;
+}
+
+- (BOOL)isAfterMountainLion {
+	if ([self OSMajorVersion]==10) {
+		int minorVersion = [self OSMinorVersion];
+		return (minorVersion>=8);
 	}
 	return NO;
 }

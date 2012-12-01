@@ -23,7 +23,7 @@ function buildBody($FILES, $BOUNDARY) {
 		$FILESIZE = $_FILES[$KEY]['size'];
 		$BODY .= "--$BOUNDARY\r\n";
 		$BODY .= "Content-Disposition: attachment; filename=\"{$FILENAME}\"\r\n";
-		$BODY .= "Content-Type: {$FILETYPE} name=\"{$FILENAME}\"\r\n";
+		$BODY .= "Content-Type: {$FILETYPE}; name=\"{$FILENAME}\"\r\n";
 		$BODY .= "Content-Transfer-Encoding: binary\r\n\r\n";
 		$FILEPIPE = fopen($FILE, "r");
 		$BODY .= fread($FILEPIPE, $FILESIZE);
@@ -34,7 +34,7 @@ function buildBody($FILES, $BOUNDARY) {
 	return $BODY;
 }
 
-//Word of warning, IP is for debugging, do not include the IP of your user without the knowledge that your user may not user your application afterword.
+//Word of warning, IP is for debugging, do not include the IP of your user without the knowledge that your user may not use your application.
 //$_POST['IP'] = $_SERVER['HTTP_PC_REMOTE_ADDR']!="" ? $_SERVER['HTTP_PC_REMOTE_ADDR'] : $_SERVER['REMOTE_ADDR'];
 
 $_POST['User_Agent'] = urldecode($_SERVER['HTTP_USER_AGENT']);
@@ -81,7 +81,7 @@ if ($_POST['GRType']=="crash") {
 		$headers .= "{$NAME}: {$_POST[$KEY]}\n";
 	}
 	if ($userReport!="")
-		$headers .= "\nThe user was\n$userReport";
+		$headers .= "\nThe user was\n$userReport\n";
 	
 	$headers .= buildBody($_FILES, $boundary);
 	
